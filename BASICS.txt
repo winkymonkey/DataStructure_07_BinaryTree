@@ -1,0 +1,118 @@
+HEIGHT OF TREE:
+	It is maximum number of nodes on root to leaf path.
+	While counting height, a base line is considered at the BOTTOM.
+
+DEPTH OF TREE:
+	It is the number of edges from the node to the tree's root node.
+	While counting height, a base line is considered at the TOP.
+
+LEVEL OF TREE:
+	DEPTH+1
+
+        1           ---- Level 1            ---- 1's Height=3
+      /   \
+     2     3        ---- Level 2            ---- 2's Height=2	3's Height=1
+    / \   / \
+   4   5 6   7      ---- Level 3            ---- 4's Height=1	5's Height=0	6's Height=0	7's Height=0
+  / \
+ 8   9              ---- Level 4			---- 8's Height=0	9's Height=0
+
+
+
+
+----------------------------------------------------------------------------------------------
+Maximum no of nodes at 'h' height ----------------> (2^h - 1)
+Minimum height to accommodate 'N' nodes ----------> CEIL[log (n+1)]
+
+
+
+----------------------------------------------------------------------------------------------
+	Perfect Binary Tree
+All leaves are at same level
+All internal nodes have two children
+	   1                        1
+     /   \                    /   \
+    2     3                  2     3
+   / \   / \
+  4   5 6   7
+
+
+
+	Complete Binary Tree
+All levels are completely filled (except last level)
+Last level has all keys as left as possible
+(i.e. binary heap)	
+	   1                        1
+     /   \                    /   \
+    2     3                  2     3
+   / \   / \               / \     / \
+  4   5 6   7             4   5   6   7
+                        / \  /
+                       8  9  10
+
+
+
+	Full Binary Tree
+Every node has 0 or 2 children
+	   1                    1                        1
+     /   \                /   \                    /   \
+    2     3              2     3                  2     3
+   / \   / \                  / \                / \   / \
+  4   5 6   7                4   5              4   5 6   7
+                                / \            / \
+                               6   7          8   9
+
+
+
+
+----------------------------------------------------------------------------------------------
+	Balanced Binary Tree
+If height of the tree is O(Log n) [n = no. of nodes]
+(i.e. AVL tree, Red-Black tree)
+
+	AVL Tree
+It maintains O(Log n) height by keeping the difference between heights of left & right subtrees as 1.
+
+	Red-Black Tree
+It maintain O(Log n) height
+ -- by keeping same the number of Black nodes on every root to leaf paths 
+ -- by making sure that there are no adjacent red nodes
+
+
+
+
+----------------------------------------------------------------------------------------------
+	HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
+For n=1, only  1 unlabeled binary tree structure possible
+For n=2, only  2 unlabeled binary tree structure possible
+For n=3, only  5 unlabeled binary tree structure possible
+For n=4, only 14 unlabeled binary tree structure possible
+...
+
+This is Catalan Series
+1 1 2 5 14 42 132 429 1430 4862,....
+                                                        (2n)!
+The n’th Catalan Number can also be evaluated as = ----------------
+                                                      (n+1)*!n! 
+
+
+
+
+----------------------------------------------------------------------------------------------
+	HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
+To count labeled trees, we can use above count for unlabeled trees.
+The idea is simple, every unlabeled tree with n nodes can create "n!" different labeled trees
+	by assigning different permutations of labels to all nodes.
+
+
+
+
+----------------------------------------------------------------------------------------------
+	BINARY TREE OPERATIONS
+Insert/Delete operations are slower than Array,and quicker than Linked List 
+
+
+
+
+
+
