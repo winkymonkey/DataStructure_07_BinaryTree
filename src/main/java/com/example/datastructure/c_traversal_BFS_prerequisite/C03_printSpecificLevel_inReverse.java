@@ -13,20 +13,21 @@ public class C03_printSpecificLevel_inReverse {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
-		int targetLevel = 4;
-		printThisLevelInReverse(root, targetLevel);
+		int targetLevel = 3;
+		printThisLevel(root, targetLevel);
 	}
 	
 	
-	private static void printThisLevelInReverse(Node node, int level) {
-		if (node == null)
+	private static void printThisLevel(Node node, int level) {
+		if (node == null)											//when some node is missing
 			return;
-		if (level == 1)
-			System.out.print(node.data + " ");
 		
-		else if (node!=null && level > 1) {
-			printThisLevelInReverse(node.right, level-1);
-			printThisLevelInReverse(node.left, level-1);
+		if (level == 1) {
+			System.out.print(node.data + " ");
+		}
+		else if (level > 1) {
+			printThisLevel(node.right, level-1);
+			printThisLevel(node.left, level-1);
 		}
 	}
 	

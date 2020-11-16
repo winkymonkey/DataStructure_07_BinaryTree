@@ -19,12 +19,13 @@ public class C02_printSpecificLevel {
 	
 	
 	private static void printThisLevel(Node node, int level) {
-		if (node == null)
+		if (node == null)											//when some node is missing
 			return;
-		if (level == 1)
-			System.out.print(node.data + " ");
 		
-		else if (node!=null && level > 1) {
+		if (level == 1) {
+			System.out.print(node.data + " ");
+		}
+		else if (level > 1) {
 			printThisLevel(node.left, level-1);
 			printThisLevel(node.right, level-1);
 		}

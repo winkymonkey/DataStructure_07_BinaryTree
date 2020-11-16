@@ -21,16 +21,15 @@ public class C01_getMaxLevel {
 	private static int getMaxLevel(Node node) {
 		if (node == null)
 			return 0;
-		else {
-			int leftLevel = getMaxLevel(node.left);
-			int rightLevel = getMaxLevel(node.right);
-			
-			if (leftLevel > rightLevel)
-				return leftLevel+1;
-			else
-				return rightLevel+1;
 		
-		}
+		int leftLevel = getMaxLevel(node.left);
+		int rightLevel = getMaxLevel(node.right);
+		
+		if (leftLevel > rightLevel)
+			return leftLevel+1;
+		else
+			return rightLevel+1;
+		
 	}
 	
 }

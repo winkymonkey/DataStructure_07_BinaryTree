@@ -5,7 +5,8 @@ package com.example.datastructure.e_traversal_misc;
  * Print a Binary Tree in Vertical Order | Set 2
  * *****************************************************************************
  */
-public class A03_printVerticalOrder_efficient {
+
+public class E03_printVerticalOrder_efficient {
 	/*
 	 * We need to check the Horizontal Distances from root for all nodes.
 	 * If two nodes have the same Horizontal Distance (HD), then they are on same vertical line.

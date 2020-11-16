@@ -4,38 +4,44 @@ package com.example.datastructure.d_traversal_BFS;
  * *****************************************************************************
  * Reverse alternate levels of a perfect binary tree
  * *****************************************************************************
+ * Example:
+ * 
+ * Given Tree:
+ *            a
+ *        /       \
+ *      b           c
+ *    /   \       /   \
+ *   d     e     f     g
+ *  / \   / \   / \   / \
+ * h   i j   k l   m n   o
+ * 
+ * Modified Tree:
+ *            a
+ *        /       \
+ *      c           b
+ *    /   \       /   \
+ *   d     e     f     g
+ *  / \   / \   / \   / \
+ * o   n m   l k   j i   h
+ * 
+ * *****************************************************************************
  */
 
 public class D04_BFS_reverseAlternateLevels {
 	/*
-	 * ---------------
-	 * TWO TRAVERSALS
-	 * ---------------
-	 * 1.traverse the tree in one specific style (i.e. in, pre, post, level)
-	 * 2.while traversing, store odd level nodes in auxiliary array AUX[]
-	 * 3.reverse AUX[]
-	 * 4.traverse the tree once again in exactly same style as earlier
-	 * 5.while traversing, for odd level traversal replace the node by AUX[i]
-	 * 6.i++
-	 * 
-	 * 
-	 * 
-	 * 
-	 * --------------
-	 * ONE TRAVERSAL
-	 * --------------
 	 * void main() {
-	 * 		reverseAlternate(root.left, root.right, 1);
+	 *    reverseAlternate(root.left, root.right, 1);
 	 * }
 	 * 
 	 * void reverseAlternate(Node root1, Node root2, int level) {
-	 * 		if(root1==null || right==root2)
-	 * 			return;
-	 * 		if(level is ODD)
-	 * 			Swap root1.key and root2.key	//Swap subtrees
+	 *    if (root1==null || root2==null)
+	 *       return;
+	 *    
+	 *    if (level is EVEN)
+	 *       Swap root1.data and root2.data						//Swap subtrees
 	 * 		
-	 * 		reverseAlternate(root1.left, root2.right, level+1);
-	 * 		reverseAlternate(root1.right, root2.left, level+1);
+	 *    reverseAlternate(root1.left, root2.right, level+1);
+	 *    reverseAlternate(root1.right, root2.left, level+1);
 	 * }
 	 * 
 	 */

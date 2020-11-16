@@ -31,7 +31,8 @@ class Limit {
  * 
  * *****************************************************************************
  */
-class A02_printVerticalOrder {
+
+class E02_printVerticalOrder {
 	private static Limit limit = new Limit();
 	
 	public static void main(String args[]) {

@@ -21,7 +21,8 @@ import com.example.datastructure.TreeUtil;
  * 
  * *****************************************************************************
  */
-public class A04_boundaryTraversal {
+
+public class E04_boundaryTraversal {
 	
 	public static void main(String args[]) {
 		Node root = TreeUtil.createNewTree3();
