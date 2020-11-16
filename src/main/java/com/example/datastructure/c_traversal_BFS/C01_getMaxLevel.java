@@ -4,7 +4,7 @@ import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtil;
 
 
-public class A01_getMaxLevel {
+public class C01_getMaxLevel {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
