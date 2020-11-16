@@ -5,7 +5,7 @@ package com.example.datastructure.c_traversal_BFS;
  * Reverse alternate levels of a perfect binary tree
  * *****************************************************************************
  */
-public class A07_LevelOrder_reverseAlternateLevels {
+public class C07_LevelOrder_reverseAlternateLevels {
 	/*
 	 * ---------------
 	 * TWO TRAVERSALS

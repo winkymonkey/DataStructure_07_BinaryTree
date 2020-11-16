@@ -33,7 +33,7 @@ public class A02_DFS_inPrePost_iterative {
 				current = current.left;
 			}
 			Node popped = stack.pop();
-			System.out.print(popped.key + " ");
+			System.out.print(popped.data + " ");
 			if (popped.right != null) {
 				stack.push(popped.right);
 				current = popped.right;
@@ -48,7 +48,7 @@ public class A02_DFS_inPrePost_iterative {
 
 		while (!stack.isEmpty()) {
 			Node current = stack.pop();
-			System.out.print(current.key + " ");
+			System.out.print(current.data + " ");
 			
 			if (current.right != null)
 				stack.push(current.right);
@@ -77,7 +77,7 @@ public class A02_DFS_inPrePost_iterative {
 		}
 		
 		while (!output.isEmpty()) {
-			System.out.print(output.pop().key + " ");
+			System.out.print(output.pop().data + " ");
 		}
 	}
 	

@@ -26,7 +26,7 @@ public class A04_boundaryTraversal {
 	public static void main(String args[]) {
 		Node root = TreeUtil.createNewTree3();
 		if(root != null) {
-			System.out.print(root.key + " ");
+			System.out.print(root.data + " ");
 			
 			printBoundaryLeft(root.left);
 			printLeaves(root.left);
@@ -42,11 +42,11 @@ public class A04_boundaryTraversal {
 			return;
 		else {
 			if(node.left != null) {
-				System.out.print(node.key + " ");
+				System.out.print(node.data + " ");
 				printBoundaryLeft(node.left);
 			}
 			else if(node.right != null) {
-				System.out.print(node.key + " ");
+				System.out.print(node.data + " ");
 				printBoundaryLeft(node.right);
 			}
 			else {
@@ -62,7 +62,7 @@ public class A04_boundaryTraversal {
 			return;
 		else {
 			if(node.left == null && node.right == null)		//leaf node
-				System.out.print(node.key + " ");
+				System.out.print(node.data + " ");
 			printLeaves(node.left);
 			printLeaves(node.right);
 		}
@@ -76,11 +76,11 @@ public class A04_boundaryTraversal {
 		else {
 			if(node.right != null) {
 				printBoundaryRight(node.right);
-				System.out.print(node.key + " ");
+				System.out.print(node.data + " ");
 			}
 			else if(node.left != null) {
 				printBoundaryRight(node.left);
-				System.out.print(node.key + " ");
+				System.out.print(node.data + " ");
 			}
 			else {
 				//Leaf node

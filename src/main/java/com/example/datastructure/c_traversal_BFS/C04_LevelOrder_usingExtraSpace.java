@@ -12,7 +12,7 @@ import com.example.datastructure.TreeUtil;
  * *****************************************************************************
  */
 
-public class A04_LevelOrder_usingExtraSpace {
+public class C04_LevelOrder_usingExtraSpace {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
@@ -25,7 +25,7 @@ public class A04_LevelOrder_usingExtraSpace {
 	private static void printBFS(Queue<Node> queue) {
 		while(!queue.isEmpty()) {
 			Node poppedNode = queue.poll();			//retrieves and removes the head (first element) of this list
-			System.out.print(poppedNode.key + " ");
+			System.out.print(poppedNode.data + " ");
 			
 			if(poppedNode.left != null) {
 				queue.add(poppedNode.left);

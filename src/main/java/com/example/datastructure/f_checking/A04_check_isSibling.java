@@ -16,7 +16,7 @@ public class A04_check_isSibling {
 		if(node == null || node.left==null || node.right==null)
 			return false;
 		
-		else if((node.left.key==a && node.right.key==b) || (node.left.key==b && node.right.key==a))
+		else if((node.left.data==a && node.right.data==b) || (node.left.data==b && node.right.data==a))
 			return true;
 		
 		return (checkSiblings(node.left, a, b) || checkSiblings(node.right, a, b));		

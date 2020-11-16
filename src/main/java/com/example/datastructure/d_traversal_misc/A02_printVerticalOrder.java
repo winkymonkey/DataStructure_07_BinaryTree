@@ -59,7 +59,7 @@ class A02_printVerticalOrder {
 		if(node == null)
 			return;
 		if(hd == line)
-			System.out.print(node.key + " ");
+			System.out.print(node.data + " ");
 		printVerticalLine(node.left, line, hd-1);
 		printVerticalLine(node.right, line, hd+1);
 	}

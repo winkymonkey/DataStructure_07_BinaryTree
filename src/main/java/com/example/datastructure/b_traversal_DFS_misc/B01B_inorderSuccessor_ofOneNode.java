@@ -38,7 +38,7 @@ public class B01B_inorderSuccessor_ofOneNode {
 	private static void inorderSuccesor(Node root, Node x) {
 		if (x.right != null) {													// Case1: If right child is not null
 			Node node = leftMostNode(x.right);
-			System.out.println("Inorder Successor of " + x.key + " is " + node.key);
+			System.out.println("Inorder Successor of " + x.data + " is " + node.data);
 			
 		}
 		
@@ -46,7 +46,7 @@ public class B01B_inorderSuccessor_ofOneNode {
 			find(root, x);
 		
 		if (x.right == null && rightMostNode(root)==x)							// Case3: If right child is null and X is the right most node
-			System.out.println("Inorder Successor of " + x.key + " is NULL");
+			System.out.println("Inorder Successor of " + x.data + " is NULL");
 	
 	}
 	
@@ -74,7 +74,7 @@ public class B01B_inorderSuccessor_ofOneNode {
 
 		if (root == x || (temp = find(root.left, x)) != null || (temp = find(root.right, x)) != null) {
 			if (temp!=null && root.left == temp) {
-				System.out.println("Inorder Successor of " + x.key + " is " + root.key);
+				System.out.println("Inorder Successor of " + x.data + " is " + root.data);
 				return null;
 			}
 			return root;

@@ -4,7 +4,7 @@ import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtil;
 
 
-public class A03_printSpecificLevel_inReverse {
+public class C03_printSpecificLevel_inReverse {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
@@ -17,7 +17,7 @@ public class A03_printSpecificLevel_inReverse {
 		if(node == null)
 			return;
 		if(level == 1)
-			System.out.print(node.key + " ");
+			System.out.print(node.data + " ");
 		
 		else if(node!=null && level > 1) {
 			printTargetLevelInReverse(node.right, level-1);
