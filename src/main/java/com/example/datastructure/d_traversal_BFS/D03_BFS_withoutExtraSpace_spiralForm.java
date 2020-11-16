@@ -1,4 +1,4 @@
-package com.example.datastructure.c_traversal_BFS;
+package com.example.datastructure.d_traversal_BFS;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.c_traversal_BFS;
  * *****************************************************************************
  */
 
-public class C03_LevelOrder_withoutExtraSpace_spiralForm {
+public class D03_BFS_withoutExtraSpace_spiralForm {
 	/*
 	 * getMaxLevel();				//get the Maximum Level Of the Tree.
 	 * for(i=0 to MaxLevel) {

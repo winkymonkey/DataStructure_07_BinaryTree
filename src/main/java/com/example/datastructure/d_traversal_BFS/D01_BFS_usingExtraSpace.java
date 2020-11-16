@@ -1,4 +1,4 @@
-package com.example.datastructure.c_traversal_BFS;
+package com.example.datastructure.d_traversal_BFS;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,7 +12,7 @@ import com.example.datastructure.TreeUtil;
  * *****************************************************************************
  */
 
-public class C01_LevelOrder_usingExtraSpace {
+public class D01_BFS_usingExtraSpace {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
@@ -24,14 +24,14 @@ public class C01_LevelOrder_usingExtraSpace {
 	
 	private static void printBFS(Queue<Node> queue) {
 		while (!queue.isEmpty()) {
-			Node poppedNode = queue.poll();			//retrieves and removes the head (first element) of this list
-			System.out.print(poppedNode.data + " ");
+			Node node = queue.poll();				//Retrieves and removes the head of this queue
+			System.out.print(node.data + " ");
 			
-			if (poppedNode.left != null)
-				queue.add(poppedNode.left);
+			if (node.left != null)
+				queue.add(node.left);
 			
-		 	if (poppedNode.right != null)
-		 		queue.add(poppedNode.right);
+		 	if (node.right != null)
+		 		queue.add(node.right);
 		 	
 		 }
 	}

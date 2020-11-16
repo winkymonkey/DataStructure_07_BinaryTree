@@ -1,4 +1,4 @@
-package com.example.datastructure.c_traversal_BFS;
+package com.example.datastructure.d_traversal_BFS;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.c_traversal_BFS;
  * *****************************************************************************
  */
 
-public class C04_LevelOrder_reverseAlternateLevels {
+public class D04_BFS_reverseAlternateLevels {
 	/*
 	 * ---------------
 	 * TWO TRAVERSALS

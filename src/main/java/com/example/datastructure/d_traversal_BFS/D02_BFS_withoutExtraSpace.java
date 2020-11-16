@@ -1,4 +1,4 @@
-package com.example.datastructure.c_traversal_BFS;
+package com.example.datastructure.d_traversal_BFS;
 
 /**
  * *****************************************************************************
@@ -6,10 +6,10 @@ package com.example.datastructure.c_traversal_BFS;
  * *****************************************************************************
  */
 
-public class C02_LevelOrder_withoutExtraSpace {
+public class D02_BFS_withoutExtraSpace {
 	/*
-	 * getMaxLevel();				//get the Maximum Level Of the Tree.
-	 * for(i=0 to MaxLevel) {
+	 * int maxLevel = getMaxLevel();				//get the Maximum Level Of the Tree.
+	 * for (i=0 to maxLevel) {
 	 * 		printThisLevel(i);		//print Current Level
 	 * }
 	 * 

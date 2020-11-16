@@ -1,4 +1,4 @@
-package com.example.datastructure.d_traversal_BFS_misc;
+package com.example.datastructure.c_traversal_BFS_prerequisite;
 
 import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtil;
@@ -9,7 +9,7 @@ import com.example.datastructure.TreeUtil;
  * ********************************************************************************
  */
 
-public class D01_getMaxLevel {
+public class C01_getMaxLevel {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
@@ -29,6 +29,7 @@ public class D01_getMaxLevel {
 				return leftLevel+1;
 			else
 				return rightLevel+1;
+		
 		}
 	}
 	
