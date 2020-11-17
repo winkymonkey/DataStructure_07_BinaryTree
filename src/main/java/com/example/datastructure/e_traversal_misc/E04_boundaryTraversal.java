@@ -7,7 +7,6 @@ import com.example.datastructure.TreeUtil;
  * *****************************************************************************
  * Boundary Traversal of binary tree
  * *****************************************************************************
- * I/P:
  * 		 1
  *     /   \
  *    2     3
@@ -16,7 +15,6 @@ import com.example.datastructure.TreeUtil;
  *     / \
  *    10  11
  * 
- * O/P:
  * 1 2 3 10 11 7 3 1
  * 
  * *****************************************************************************
@@ -39,54 +37,52 @@ public class E04_boundaryTraversal {
 	
 	/* To ensure top down order, first print this node & then call itself for left subtree */
 	private static void printBoundaryLeft(Node node) {
-		if(node == null)
+		if (node == null)
 			return;
+
+		if (node.left != null) {
+			System.out.print(node.data + " ");
+			printBoundaryLeft(node.left);
+		}
+		else if (node.right != null) {
+			System.out.print(node.data + " ");
+			printBoundaryLeft(node.right);
+		}
 		else {
-			if(node.left != null) {
-				System.out.print(node.data + " ");
-				printBoundaryLeft(node.left);
-			}
-			else if(node.right != null) {
-				System.out.print(node.data + " ");
-				printBoundaryLeft(node.right);
-			}
-			else {
-				//Leaf node
-				//do nothing to avoid duplicates in output
-			}
+			// Leaf node
+			// do nothing to avoid duplicates in output
 		}
 	}
 	
 	
 	private static void printLeaves(Node node) {
-		if(node == null)
+		if (node == null)
 			return;
-		else {
-			if(node.left == null && node.right == null)		//leaf node
-				System.out.print(node.data + " ");
-			printLeaves(node.left);
-			printLeaves(node.right);
-		}
+		
+		if (node.left == null && node.right == null) 	// leaf node
+			System.out.print(node.data + " ");
+		
+		printLeaves(node.left);
+		printLeaves(node.right);
 	}
 	
 	
 	/* To ensure bottom up order, first call itself for right subtree & then print this node */
 	private static void printBoundaryRight(Node node) {
-		if(node == null)
+		if (node == null)
 			return;
+		
+		if (node.right != null) {
+			printBoundaryRight(node.right);
+			System.out.print(node.data + " ");
+		}
+		else if (node.left != null) {
+			printBoundaryRight(node.left);
+			System.out.print(node.data + " ");
+		}
 		else {
-			if(node.right != null) {
-				printBoundaryRight(node.right);
-				System.out.print(node.data + " ");
-			}
-			else if(node.left != null) {
-				printBoundaryRight(node.left);
-				System.out.print(node.data + " ");
-			}
-			else {
-				//Leaf node
-				//do nothing to avoid duplicates in output
-			}
+			// Leaf node
+			// do nothing to avoid duplicates in output
 		}
 	}
 	

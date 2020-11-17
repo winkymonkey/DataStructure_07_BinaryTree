@@ -9,7 +9,7 @@ import com.example.datastructure.TreeUtil;
 public class A02_DFS_inPrePost_iterative {
 
 	public static void main(String[] args) {
-		Node root = TreeUtil.createNewTree5();
+		Node root = TreeUtil.createNewTree1();
 		
 		System.out.print("InOrder:::");
 		inorder(root);
@@ -25,6 +25,7 @@ public class A02_DFS_inPrePost_iterative {
 	private static void inorder(Node root) {
 		Stack<Node> stack = new Stack<>();
 		stack.push(root);
+		
 		Node current = root;
 
 		while (!stack.isEmpty()) {
@@ -47,14 +48,14 @@ public class A02_DFS_inPrePost_iterative {
 		stack.push(root);
 
 		while (!stack.isEmpty()) {
-			Node current = stack.pop();
-			System.out.print(current.data + " ");
+			Node popped = stack.pop();
+			System.out.print(popped.data + " ");
 			
-			if (current.right != null)
-				stack.push(current.right);
+			if (popped.right != null)
+				stack.push(popped.right);
 			
-			if (current.left != null)
-				stack.push(current.left);
+			if (popped.left != null)
+				stack.push(popped.left);
 		}
 	}
 	
@@ -66,14 +67,14 @@ public class A02_DFS_inPrePost_iterative {
 		Stack<Node> output = new Stack<>();
 
 		while (!stack.isEmpty()) {
-			Node current = stack.pop();
-			output.push(current);
+			Node popped = stack.pop();
+			output.push(popped);
 			
-			if (current.left != null)
-				stack.push(current.left);
+			if (popped.left != null)
+				stack.push(popped.left);
 			
-			if (current.right != null)
-				stack.push(current.right);
+			if (popped.right != null)
+				stack.push(popped.right);
 		}
 		
 		while (!output.isEmpty()) {

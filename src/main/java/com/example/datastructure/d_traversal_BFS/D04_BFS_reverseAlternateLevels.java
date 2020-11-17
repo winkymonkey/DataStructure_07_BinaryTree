@@ -37,11 +37,13 @@ public class D04_BFS_reverseAlternateLevels {
 	 *    if (root1==null || root2==null)
 	 *       return;
 	 *    
-	 *    if (level is EVEN)
-	 *       Swap root1.data and root2.data						//Swap subtrees
-	 * 		
-	 *    reverseAlternate(root1.left, root2.right, level+1);
-	 *    reverseAlternate(root1.right, root2.left, level+1);
+	 *    if (level is EVEN) {
+	 *       swap root1.data and root2.data
+	 *    }
+	 * 	  else {
+	 *       reverseAlternate(root1.left, root2.right, level+1);
+	 *       reverseAlternate(root1.right, root2.left, level+1);
+	 *    }
 	 * }
 	 * 
 	 */

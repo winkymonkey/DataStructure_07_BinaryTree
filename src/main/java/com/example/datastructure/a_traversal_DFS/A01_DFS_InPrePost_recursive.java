@@ -7,7 +7,7 @@ import com.example.datastructure.TreeUtil;
 public class A01_DFS_InPrePost_recursive {
 
 	public static void main(String[] args) {
-		Node root = TreeUtil.createNewTree5();
+		Node root = TreeUtil.createNewTree1();
 
 		System.out.print("InOrder:::");
 		inOrder(root);
