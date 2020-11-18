@@ -34,7 +34,7 @@ public class E02_printVerticalOrder {
 	private static int MAX = 0;			//maximum horizontal distance from root
 	
 	public static void main(String args[]) {
-		Node root = TreeUtil.createNewTree7();
+		Node root = TreeUtil.createNewTree8();
 		findMinMaxDistance(root, 0);
 		
 		for (int line=MIN; line<=MAX; line++) {

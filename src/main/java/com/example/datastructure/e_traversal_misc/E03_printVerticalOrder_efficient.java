@@ -51,7 +51,7 @@ public class E03_printVerticalOrder_efficient {
 	 */
 	
 	public static void main(String args[]) {
-		Node root = TreeUtil.createNewTree7();
+		Node root = TreeUtil.createNewTree8();
 		printVerticalOrder(root);
 	}
 	

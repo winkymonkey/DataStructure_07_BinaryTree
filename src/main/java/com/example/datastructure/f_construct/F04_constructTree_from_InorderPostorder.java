@@ -2,9 +2,10 @@ package com.example.datastructure.f_construct;
 
 /**
  * *****************************************************************************
- * Construct a Binary Tree from Postorder and Inorder
+ * Construct Tree from given InOrder and PostOrder traversals
  * *****************************************************************************
  */
-public class A03_buildBinaryTree_from_InorderPostorder {
+
+public class F04_constructTree_from_InorderPostorder {
 
 }
