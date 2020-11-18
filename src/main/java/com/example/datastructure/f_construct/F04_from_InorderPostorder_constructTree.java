@@ -6,6 +6,6 @@ package com.example.datastructure.f_construct;
  * *****************************************************************************
  */
 
-public class F04_constructTree_from_InorderPostorder {
+public class F04_from_InorderPostorder_constructTree {
 
 }

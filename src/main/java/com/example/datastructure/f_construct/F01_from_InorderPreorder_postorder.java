@@ -6,7 +6,7 @@ package com.example.datastructure.f_construct;
  * *****************************************************************************
  */
 
-public class F01_postorder_from_InorderPreorder {
+public class F01_from_InorderPreorder_postorder {
 	/*
 	 * We can print PostOrder traversal without constructing the tree.
 	 * The root is always the first item in PreOrder traversal and must be the last item in PostOrder traversal.

@@ -6,6 +6,6 @@ package com.example.datastructure.f_construct;
  * *****************************************************************************
  */
 
-public class F02_preorder_from_InorderPostorder {
+public class F03_from_InorderPostorder_preorder {
 	
 }

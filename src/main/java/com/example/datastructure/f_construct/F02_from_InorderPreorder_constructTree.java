@@ -8,7 +8,7 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  */
 
-public class F03_constructTree_from_InorderPreorder {
+public class F02_from_InorderPreorder_constructTree {
 	
 	private static int IN[] = {7, 2, 1, 4, 3, 5};
 	private static int PRE[] = {1, 2, 7, 3, 4, 5};
