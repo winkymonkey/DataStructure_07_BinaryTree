@@ -4,6 +4,10 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  * Check sum of Covered and Uncovered nodes of Binary Tree
  * *****************************************************************************
+ * In a binary tree, a node is called Uncovered if it appears either on left boundary or right boundary.
+ * Rest of the nodes are called covered.
+ * 
+ * *****************************************************************************
  *           9
  *         /   \
  *        4     17
@@ -17,7 +21,8 @@ package com.example.datastructure.h_checking;
  * 
  * *****************************************************************************
  */
-public class A03_check_sumOfCoveredAndUncoveredNodes {
+
+public class H03_check_sumOfCoveredAndUncoveredNodes {
 	/*
 	 * THIS PROBLEM IS RELATED TO BOUNDARY TRAVERSAL
 	 * 

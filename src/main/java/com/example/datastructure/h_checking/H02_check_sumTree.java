@@ -16,11 +16,12 @@ package com.example.datastructure.h_checking;
  *      
  * *****************************************************************************
  */
-public class A02_check_sumTree {
+
+public class H02_check_sumTree {
 	/*
 	 * ----METHOD--1----
 	 * Get the sum of nodes in left subtree and right subtree.
-	 * Check if the sum calculated is equal to root�s data.
+	 * Check if the sum calculated is equal to root's data.
 	 * Also, recursively check if the left and right subtrees are SumTrees.
 	 * 
 	 * TIME--O(n^2)

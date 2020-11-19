@@ -5,9 +5,11 @@ package com.example.datastructure.h_checking;
  * Check whether a given binary tree is perfect or not
  * *****************************************************************************
  * In a Perfect Binary Tree all internal nodes have two children and all leaves are at same level.
+ * 
  * *****************************************************************************
  */
-public class A08_check_perfectBinaryTree {
+
+public class H08_check_perfectBinaryTree {
 	/*
 	 * 1.check if a node have both left and right child.
 	 * 2.search leaf nodes recursively in both left and right subtree.

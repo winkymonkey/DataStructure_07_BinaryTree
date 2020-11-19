@@ -3,14 +3,20 @@ package com.example.datastructure.h_checking;
 import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtil;
 
+/**
+ * ******************************************************************************************
+ * Check if two nodes in a Binary Tree are siblings
+ * ******************************************************************************************
+ */
 
-public class A04_check_isSibling {
+public class H04_check_isSibling {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtil.createNewTree3();
 		boolean isSibling = checkSiblings(root, 10, 11);
 		System.out.println(isSibling);
 	}
+	
 	
 	private static boolean checkSiblings(Node node, int a, int b) {
 		if(node == null || node.left==null || node.right==null)

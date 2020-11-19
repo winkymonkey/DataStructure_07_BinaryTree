@@ -6,6 +6,6 @@ package com.example.datastructure.j_sum;
  * *****************************************************************************
  */
 
-public class A01_largestSubtreeSum {
+public class J01_largestSubtreeSum {
 
 }

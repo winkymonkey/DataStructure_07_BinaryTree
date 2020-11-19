@@ -5,7 +5,8 @@ package com.example.datastructure.h_checking;
  * Check if all leaves are at same level
  * *****************************************************************************
  */
-public class A07_check_ifAllLeavesAreAtSameLevel {
+
+public class H07_check_ifAllLeavesAreAtSameLevel {
 	/*
 	 * int storedLevel = 0;
 	 * 1.start traversing from root & recursively search in left and right subtree.

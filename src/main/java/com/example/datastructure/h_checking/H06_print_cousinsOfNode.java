@@ -1,10 +1,11 @@
-package com.example.datastructure.j_sum;
+package com.example.datastructure.h_checking;
 
 /**
  * *****************************************************************************
- * Subtree with given sum in a Binary Tree
+ * Print cousins of a given node in Binary Tree
  * *****************************************************************************
  */
-public class A02_subtreeWithGivenSum {
+
+public class H06_print_cousinsOfNode {
 
 }
