@@ -24,6 +24,9 @@ public class F02_from_InorderPreorder_constructTree {
 	
 
 	private static Node buildTree(int inStart, int inEnd, int preStart) {
+		if (inStart > inEnd)
+			return null;
+		
 		Node tNode = new Node(PRE[preStart]);
 
 		if (inStart == inEnd)
@@ -31,11 +34,8 @@ public class F02_from_InorderPreorder_constructTree {
 
 		int result = search(inStart, inEnd, tNode.data);
 		
-		if(inStart != result)
-			tNode.left = buildTree(inStart, result-1, preStart+1);
-		
-		if(inEnd != result)
-			tNode.right = buildTree(result+1, inEnd, result+1);
+		tNode.left = buildTree(inStart, result-1, preStart+1);
+		tNode.right = buildTree(result+1, inEnd, result+1);
 
 		return tNode;
 	}

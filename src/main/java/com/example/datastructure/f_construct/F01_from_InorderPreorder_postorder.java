@@ -7,18 +7,6 @@ package com.example.datastructure.f_construct;
  */
 
 public class F01_from_InorderPreorder_postorder {
-	/*
-	 * We can print PostOrder traversal without constructing the tree.
-	 * The root is always the first item in PreOrder traversal and must be the last item in PostOrder traversal.
-	 * We first recursively print left subtree, then recursively print right subtree, finally print root.
-	 * 
-	 * To find boundaries of left and right subtrees in PRE[] and IN[], we search root in IN[]
-	 * - all elements before root in IN[] are elements of left subtree
-	 * - all elements after root in IN[] are elements of right subtree
-	 * 
-	 * In PRE[], all elements after index of root in IN[] are elements of right subtree.
-	 * and all elements before index (including the element at index and excluding the first element) are elements of left subtree.
-	 */
 	
 	private static int IN[] = {7, 2, 1, 4, 3, 5};
 	private static int PRE[] = {1, 2, 7, 3, 4, 5};
@@ -33,6 +21,9 @@ public class F01_from_InorderPreorder_postorder {
 	
 	
 	private static void getPostOrder(int inStart, int inEnd, int preStart) {
+		if (inStart > inEnd)
+			return;
+		
 		if (inStart == inEnd) {
 			System.out.print(IN[inStart] + " ");
 			return;
@@ -40,11 +31,8 @@ public class F01_from_InorderPreorder_postorder {
 		
 		int result = search(inStart, inEnd, PRE[preStart]);
 		
-		if(inStart != result)
-			getPostOrder(inStart, result-1, preStart+1);
-		
-		if(inEnd != result)
-			getPostOrder(result+1, inEnd, result+1);
+		getPostOrder(inStart, result-1, preStart+1);
+		getPostOrder(result+1, inEnd, result+1);
 		
 		System.out.print(IN[result] + " ");
 	}

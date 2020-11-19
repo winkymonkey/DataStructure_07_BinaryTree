@@ -4,7 +4,7 @@ import com.example.datastructure.Node;
 
 /**
  * *****************************************************************************
- * Construct a tree from InOrder and Level order traversals | Set 1
+ * Construct a tree from InOrder and Level order traversals
  * *****************************************************************************
  */
 
@@ -15,40 +15,35 @@ public class F06_from_InorderLevelorder_constructTree {
 	
 	
 	public static void main(String[] args) {
-		Node root = buildTree();
+		Node startnode = null;
+		int inStart = 0;
+		int inEnd = IN.length-1;
+		Node root = constructTree(startnode, inStart, inEnd);
 		System.out.println(root);
 	}
 	
 	
-	private static Node buildTree() {
-		Node startnode = null;
-		int inStart = 0;
-		int inEnd = IN.length-1;
-		return constructTree(startnode, inStart, inEnd);
-	}
-	
-	
 	private static Node constructTree(Node startNode, int inStart, int inEnd) {
-		if(inStart > inEnd)
+		if (inStart > inEnd)
 			return null;
 		
-		if(inStart == inEnd)
+		if (inStart == inEnd)
 			return new Node(IN[inStart]);
 
 		boolean found = false;
 		int index = 0;
 
 		// it represents the index in 'IN' array of elements that appear first in 'LEVEL' array
-		for(int i=0; i<LEVEL.length-1; i++) {
-			for(int j=inStart; j<inEnd; j++) {
-				if(LEVEL[i] == IN[j]) {
+		for (int i=0; i<LEVEL.length-1; i++) {
+			for (int j=inStart; j<inEnd; j++) {
+				if (LEVEL[i] == IN[j]) {
 					startNode = new Node(LEVEL[i]);
 					index = j;
 					found = true;
 					break;
 				}
 			}
-			if(found == true)
+			if (found == true)
 				break;
 		}
 		
