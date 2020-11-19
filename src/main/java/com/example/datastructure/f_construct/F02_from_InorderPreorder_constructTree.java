@@ -27,17 +27,17 @@ public class F02_from_InorderPreorder_constructTree {
 		if (inStart > inEnd)
 			return null;
 		
-		Node tNode = new Node(PRE[preStart]);
+		Node node = new Node(PRE[preStart]);
 
 		if (inStart == inEnd)
-			return tNode;
+			return node;
 
-		int result = search(inStart, inEnd, tNode.data);
+		int result = search(inStart, inEnd, PRE[preStart]);
 		
-		tNode.left = buildTree(inStart, result-1, preStart+1);
-		tNode.right = buildTree(result+1, inEnd, result+1);
+		node.left = buildTree(inStart, result-1, preStart+1);
+		node.right = buildTree(result+1, inEnd, result+1);
 
-		return tNode;
+		return node;
 	}
 	
 	

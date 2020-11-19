@@ -1,4 +1,4 @@
-package com.example.datastructure.f_construct;
+package com.example.datastructure.g_construct2;
 
 /**
  * *****************************************************************************
@@ -16,6 +16,7 @@ package com.example.datastructure.f_construct;
  * 
  * *****************************************************************************
  */
-public class A07_buildBinaryTree_from_parentArray {
+
+public class G03_buildBinaryTree_from_parentArray {
 	
 }

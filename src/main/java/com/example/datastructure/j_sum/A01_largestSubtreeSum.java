@@ -1,10 +1,11 @@
-package com.example.datastructure.g_checking;
+package com.example.datastructure.j_sum;
 
 /**
  * *****************************************************************************
- * Check if a binary tree is subtree of another binary tree | Set 2
+ * Find largest subtree sum in a tree
  * *****************************************************************************
  */
-public class A10_check_subtreeOfAnotherTree {
+
+public class A01_largestSubtreeSum {
 
 }

@@ -2,10 +2,11 @@ package com.example.datastructure.f_construct;
 
 /**
  * *****************************************************************************
- * Construct Full Binary Tree from given preorder and postorder traversals
+ * Construct Full Binary Tree from given PreOrder and PostOrder traversals
  * *****************************************************************************
  */
-public class A06_buildFullBinaryTree_from_PreorderPostorder {
+
+public class F07_from_PreorderPostorder_constructFullBinaryTree {
 	/*             1
 	 *           /   \
 	 *         2       3
@@ -15,6 +16,8 @@ public class A06_buildFullBinaryTree_from_PreorderPostorder {
 	 *   8    9
 	 *  
 	 * 
+	 * It is not possible to construct a general Binary Tree from PreOrder and PostOrder traversals
+	 * But if know that the Binary Tree is Full, we can construct the tree without ambiguity.
 	 * 
 	 * ------------------
 	 * STEP-1

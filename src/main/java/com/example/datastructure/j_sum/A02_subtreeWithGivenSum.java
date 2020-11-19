@@ -1,4 +1,4 @@
-package com.example.datastructure.h_sum;
+package com.example.datastructure.j_sum;
 
 /**
  * *****************************************************************************

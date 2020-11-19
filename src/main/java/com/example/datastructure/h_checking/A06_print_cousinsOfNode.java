@@ -1,10 +1,10 @@
-package com.example.datastructure.h_sum;
+package com.example.datastructure.h_checking;
 
 /**
  * *****************************************************************************
- * Find largest subtree sum in a tree
+ * Print cousins of a given node in Binary Tree
  * *****************************************************************************
  */
-public class A01_largestSubtreeSum {
+public class A06_print_cousinsOfNode {
 
 }

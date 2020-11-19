@@ -1,11 +1,12 @@
-package com.example.datastructure.f_construct;
+package com.example.datastructure.g_construct2;
 
 /**
  * *****************************************************************************
  * Construct a complete binary tree from given array in level order fashion
  * *****************************************************************************
  */
-public class A05_buildCompleteBinaryTree_from_arrayRepresentation {
+
+public class G02_buildCompleteBinaryTree_from_arrayRepresentation {
 	/*
 	 * The same way as previous.
 	 * But the advantage is that we can access any element in O(1) time.

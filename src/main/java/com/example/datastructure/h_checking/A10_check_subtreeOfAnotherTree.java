@@ -1,10 +1,10 @@
-package com.example.datastructure.g_checking;
+package com.example.datastructure.h_checking;
 
 /**
  * *****************************************************************************
- * Print cousins of a given node in Binary Tree
+ * Check if a binary tree is subtree of another binary tree | Set 2
  * *****************************************************************************
  */
-public class A06_print_cousinsOfNode {
+public class A10_check_subtreeOfAnotherTree {
 
 }

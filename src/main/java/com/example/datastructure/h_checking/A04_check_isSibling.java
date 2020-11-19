@@ -1,4 +1,4 @@
-package com.example.datastructure.g_checking;
+package com.example.datastructure.h_checking;
 
 import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtil;
