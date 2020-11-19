@@ -15,10 +15,9 @@ public class F06_from_InorderLevelorder_constructTree {
 	
 	
 	public static void main(String[] args) {
-		Node startnode = null;
 		int inStart = 0;
 		int inEnd = IN.length-1;
-		Node root = constructTree(startnode, inStart, inEnd);
+		Node root = constructTree(null, inStart, inEnd);
 		System.out.println(root);
 	}
 	
