@@ -1,7 +1,7 @@
 package com.example.datastructure.e_traversal_misc;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 /**
  * *****************************************************************************
@@ -23,7 +23,7 @@ import com.example.datastructure.TreeUtil;
 public class E04_boundaryTraversal {
 	
 	public static void main(String args[]) {
-		Node root = TreeUtil.createNewTree7();
+		Node root = TreeUtilA.createNewTreeA7();
 		if(root != null) {
 			System.out.print(root.data + " ");
 			

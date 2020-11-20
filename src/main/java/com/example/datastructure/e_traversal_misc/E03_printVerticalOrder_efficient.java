@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 /**
  * *****************************************************************************
@@ -51,7 +51,7 @@ public class E03_printVerticalOrder_efficient {
 	 */
 	
 	public static void main(String args[]) {
-		Node root = TreeUtil.createNewTree8();
+		Node root = TreeUtilA.createNewTreeA7();
 		printVerticalOrder(root);
 	}
 	

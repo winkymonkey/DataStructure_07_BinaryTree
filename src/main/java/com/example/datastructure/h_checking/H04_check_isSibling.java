@@ -1,7 +1,7 @@
 package com.example.datastructure.h_checking;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 /**
  * ******************************************************************************************
@@ -12,7 +12,7 @@ import com.example.datastructure.TreeUtil;
 public class H04_check_isSibling {
 	
 	public static void main(String[] args) {
-		Node root = TreeUtil.createNewTree3();
+		Node root = TreeUtilA.createNewTreeA3();
 		boolean isSibling = checkSiblings(root, 10, 11);
 		System.out.println(isSibling);
 	}

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 /**
  * *****************************************************************************
@@ -15,7 +15,7 @@ import com.example.datastructure.TreeUtil;
 public class D01_BFS_usingExtraSpace {
 	
 	public static void main(String[] args) {
-		Node root = TreeUtil.createNewTree3();
+		Node root = TreeUtilA.createNewTreeA3();
 		printBFS(root);
 	}
 	

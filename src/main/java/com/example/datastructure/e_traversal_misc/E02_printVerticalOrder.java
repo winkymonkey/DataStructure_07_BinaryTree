@@ -1,7 +1,7 @@
 package com.example.datastructure.e_traversal_misc;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 /**
  * *****************************************************************************
@@ -34,7 +34,7 @@ public class E02_printVerticalOrder {
 	private static int MAX = 0;			//maximum horizontal distance from root
 	
 	public static void main(String args[]) {
-		Node root = TreeUtil.createNewTree8();
+		Node root = TreeUtilA.createNewTreeA7();
 		findMinMaxDistance(root, 0);
 		
 		for (int line=MIN; line<=MAX; line++) {

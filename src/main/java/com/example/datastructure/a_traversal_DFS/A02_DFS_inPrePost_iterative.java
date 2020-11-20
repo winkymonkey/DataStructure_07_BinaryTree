@@ -3,13 +3,13 @@ package com.example.datastructure.a_traversal_DFS;
 import java.util.Stack;
 
 import com.example.datastructure.Node;
-import com.example.datastructure.TreeUtil;
+import com.example.datastructure.TreeUtilA;
 
 
 public class A02_DFS_inPrePost_iterative {
 
 	public static void main(String[] args) {
-		Node root = TreeUtil.createNewTree1();
+		Node root = TreeUtilA.createNewTreeA1();
 		
 		System.out.print("InOrder:::");
 		inorder(root);
