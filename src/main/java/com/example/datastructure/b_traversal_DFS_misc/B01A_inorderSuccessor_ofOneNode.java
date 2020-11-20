@@ -8,11 +8,11 @@ package com.example.datastructure.b_traversal_DFS_misc;
  * InOrder Successor is NULL for the last node in InOrder traversal.
  * 
  * Example:
- * 		  1
- *      /    \
- *     2      3
- *   /   \     \
- *  4     5     6
+ * 		1
+ *     / \
+ *    2   3
+ *   / \   \
+ *  4   5   6
  * 
  * InOrder successor of node 3 is 6
  * InOrder successor of node 4 is 2
@@ -29,13 +29,13 @@ public class B01A_inorderSuccessor_ofOneNode {
 	 * -----------------------------
 	 * CASE-1:	IF [X.right != null]
 	 * -----------------------------
-	 * Recursively find the leftmost node in the right subtree of X.
+	 * Recursively find the leftmost node in the right subtree rooted at X.
 	 * //successor is the leftmost Node
 	 * 
 	 * 
 	 * 
 	 * ------------------------------------------------------------------
-	 * CASE-2:	IF [X.right == null && rightMostNode of entire tree != X]
+	 * CASE-2:	IF [X.right == null] and [X is NOT the rightMost Node of entire tree]
 	 * ------------------------------------------------------------------
 	 * Recursively find 'X' in the entire tree
 	 * After finding 'X', recursion will backtrack to the root
@@ -47,7 +47,7 @@ public class B01A_inorderSuccessor_ofOneNode {
 	 * 
 	 * 
 	 * ------------------------------------------------------------------
-	 * CASE-3:	IF [X.right == null && rightMostNode of entire tree == X]
+	 * CASE-3:	IF [X.right == null] and [X is the rightMost Node of entire tree]
 	 * ------------------------------------------------------------------
 	 * //successor is NULL
 	 * 

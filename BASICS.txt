@@ -20,40 +20,41 @@ LEVEL OF TREE:
 
 
 
-----------------------------------------------------------------------------------------------
+==============================================================================================
 Maximum no of nodes at 'h' height ----------------> (2^h - 1)
-Minimum height to accommodate 'N' nodes ----------> CEIL[log (n+1)]
+Minimum height to accommodate 'N' nodes ----------> CEIL[log(n+1)]
 
 
 
-----------------------------------------------------------------------------------------------
-	Perfect Binary Tree
-All leaves are at same level
-All internal nodes have two children
-	   1                        1
-     /   \                    /   \
-    2     3                  2     3
+
+==============================================================================================
+PERFECT/COMPLETE BINARY TREE
+	All leaves are at same level
+	All internal nodes have two children
+	   1                       1
+     /   \                    / \
+    2     3                  2   3
    / \   / \
   4   5 6   7
 
 
 
-	Complete Binary Tree
-All levels are completely filled (except last level)
-Last level has all keys as left as possible
-(i.e. binary heap)	
-	   1                        1
-     /   \                    /   \
-    2     3                  2     3
-   / \   / \               / \     / \
-  4   5 6   7             4   5   6   7
-                        / \  /
-                       8  9  10
+ALMOST COMPLETE BINARY TREE
+	Except last level, other levels are completely filled
+	The last level has all keys as left as possible	
+	Example: binary heap	
+	              1
+                /   \
+               2     3
+              / \   / \
+             4   5 6   7
+            / \  /
+           8  9 10
 
 
 
-	Full Binary Tree
-Every node has 0 or 2 children
+FULL BINARY TREE
+	Every node has 0 or 2 children
 	   1                    1                        1
      /   \                /   \                    /   \
     2     3              2     3                  2     3
@@ -65,60 +66,91 @@ Every node has 0 or 2 children
 
 
 
-----------------------------------------------------------------------------------------------
-	Balanced Binary Tree
-If height of the tree is O(Log n) [n = no. of nodes]
-(i.e. AVL tree, Red-Black tree)
-
-	AVL Tree
-It maintains O(Log n) height by keeping the difference between heights of left & right subtrees as 1.
-
-	Red-Black Tree
-It maintain O(Log n) height
- -- by keeping same the number of Black nodes on every root to leaf paths 
- -- by making sure that there are no adjacent red nodes
+==============================================================================================
+BALANCED BINARY TREE
+	If height of the binary tree is O(Logn)
+	
+	Example - AVL Tree maintains O(Logn) height 
+				- by keeping the difference between heights of left & right subtrees as 1.
+	
+	Example - Red-Black Tree maintain O(Logn) height
+				- by keeping same the number of Black nodes on every root to leaf paths
+				- by making sure that there are no adjacent red nodes
 
 
 
 
-----------------------------------------------------------------------------------------------
-	HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
-For n=1, only  1 unlabeled binary tree structure possible
-For n=2, only  2 unlabeled binary tree structure possible
-For n=3, only  5 unlabeled binary tree structure possible
-For n=4, only 14 unlabeled binary tree structure possible
-...
-
-This is Catalan Series
-1 1 2 5 14 42 132 429 1430 4862,....
-                                                        (2n)!
-The n'th Catalan Number can also be evaluated as = ----------------
-                                                      (n+1)*!n! 
+==============================================================================================
+LABLED BINARY TREE
+	A Binary Tree is labeled if every node is assigned a label (value)
+	  o
+	 / \
+	o   o
 
 
+UNLABLED BINARY TREE
+	A Binary Tree is unlabeled if nodes are not assigned any label (value)
+	  1
+	 / \
+	2   3
 
 
-----------------------------------------------------------------------------------------------
-	HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
-To count labeled trees, we can use above count for unlabeled trees.
-The idea is simple, every unlabeled tree with n nodes can create "n!" different labeled trees
-	by assigning different permutations of labels to all nodes.
+HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
+	For n=1, only  1 unlabeled binary tree structure possible
+	For n=2, only  2 unlabeled binary tree structure possible
+	For n=3, only  5 unlabeled binary tree structure possible
+	For n=4, only 14 unlabeled binary tree structure possible
+	...
+
+	This is Catalan Series
+	1 1 2 5 14 42 132 429 1430 4862 ....
+														(2n)!
+	The n'th Catalan Number can also be evaluated as = -----------
+														(n+1)! * n! 
+
+
+HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
+	First, count of the unlabeled trees as above.
+	Now every unlabeled tree with n nodes can create n! labeled trees by assigning different permutations of labels to all nodes.
+						(2n)! * n!
+	So the count is = --------------
+						(n+1)! * n!
 
 
 
 
-----------------------------------------------------------------------------------------------
-	BINARY TREE OPERATIONS
-Insert/Delete operations are slower than Array,and quicker than Linked List 
+==============================================================================================
+Insert/Delete operations in Binary Tree 
+	are slower than Array
+	and quicker than Linked List
+
+
+
+DFS (Depth First Search) (InOrder, PreOrder, PostOrder)
+	- it uses Stack data structure.
+	- it requires O(n) time
+	- it requires O(h) extra space (h = maximum height of Binary Tree)
+	- it starts visiting nodes from leaves. So if we need to search something that is closer to a leaf, choose DFS
+
+
+BFS (Breadth First Search)
+	- it uses Queue data structure for finding the shortest path.
+	- it requires O(n) time
+	- it requires O(w) extra space (w = maximum width of Binary Tree)
+	- it starts visiting nodes from root. So if we need to search something that is closer to a root, choose BFS
 
 
 
 
-
-
-https://www.geeksforgeeks.org/if-you-are-given-two-traversal-sequences-can-you-construct-the-binary-tree/
-
-
+==============================================================================================
+If you are given two traversal sequences, can you construct the binary tree?
+	if we are given InOrder & PreOrder --> we can construct the tree
+	if we are given InOrder & PostOrder --> we can construct the tree
+	if we are given InOrder & LevelOrder --> we can construct the tree
+	
+	That means that the InOrder sequence is the must.
+	Otherwise, the tree can be constructed.
+	Even if PreOrder, PostOrder and LevelOrder are given, the tree can not be constructed.
 
 
 
