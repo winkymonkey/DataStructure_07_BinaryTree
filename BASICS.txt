@@ -140,6 +140,13 @@ BFS (Breadth First Search)
 	- it starts visiting nodes from root. So if we need to search something that is closer to a root, choose BFS
 
 
+If the tree is very deep and solutions are rare, DFS might take an extremely long time, but BFS could be faster.
+If the tree is very wide, a BFS might need too much memory, so it might be completely impractical.
+
+Read More:
+https://stackoverflow.com/questions/3332947/when-is-it-practical-to-use-depth-first-search-dfs-vs-breadth-first-search-bf
+
+
 
 
 ==============================================================================================

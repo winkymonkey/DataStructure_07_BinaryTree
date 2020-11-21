@@ -5,7 +5,7 @@ import com.example.datastructure.TreeUtilA;
 
 /**
  * *****************************************************************************
- * Print a Binary Tree in Vertical Order | Set 1
+ * Print a Binary Tree in Vertical Order
  * *****************************************************************************
  *          1
  *        /   \
@@ -15,7 +15,7 @@ import com.example.datastructure.TreeUtilA;
  *            \   \
  *             8   9 
  * 
- * Vertical Traversal of binary tree :
+ * Output:
  * 		4
  * 		2
  * 		1 5 6

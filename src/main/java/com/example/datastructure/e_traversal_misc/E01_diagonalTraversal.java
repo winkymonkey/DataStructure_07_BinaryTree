@@ -6,17 +6,16 @@ package com.example.datastructure.e_traversal_misc;
  * *****************************************************************************
  * Given a Binary Tree, print all diagonal elements in a binary tree belonging to the same line.
  * 
- * Example:
- * 
+ * *****************************************************************************
  *      8
  *    /   \
  *   3    10
- *  /    /   \
- * 1    6    14
+ *  /    /  \
+ * 1    6   14
  *     / \   /
  *    4   7 13
  * 
- * Diagonal Traversal of binary tree :
+ * Output:
  * 		8 10 14
  * 		3 6 7 13
  * 		1 4

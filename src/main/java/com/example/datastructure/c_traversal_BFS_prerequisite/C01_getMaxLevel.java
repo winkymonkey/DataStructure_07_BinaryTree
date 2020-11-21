@@ -12,7 +12,7 @@ import com.example.datastructure.TreeUtilA;
 public class C01_getMaxLevel {
 	
 	public static void main(String[] args) {
-		Node root = TreeUtilA.createNewTreeA3();
+		Node root = TreeUtilA.createNewTreeA2();
 		int maxLevel = getMaxLevel(root);
 		System.out.println(maxLevel);
 	}

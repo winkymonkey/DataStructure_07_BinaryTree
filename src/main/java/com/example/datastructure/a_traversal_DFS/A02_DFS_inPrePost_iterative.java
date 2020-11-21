@@ -7,7 +7,7 @@ import com.example.datastructure.TreeUtilA;
 
 /**
  * ******************************************************************************************
- * Print InOrder, PreOrder, PostOrder using iterative approach
+ * Print InOrder, PreOrder, PostOrder traversal sequence using iterative approach
  * ******************************************************************************************
  * 		  1
  *      /   \

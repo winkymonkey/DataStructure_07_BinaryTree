@@ -4,22 +4,23 @@ package com.example.datastructure.b_traversal_DFS_misc;
  * *********************************************************************************************
  * Replace each node in binary tree with the sum of its InOrder predecessor and successor
  * *********************************************************************************************
- * I/P:
+ * Input:
  *        1
  *      /   \
  *     2     3
  *    / \   / \
  *   4   5 6   7			
- *   						For 2: InOrder predecessor=4, InOrder successor=5, Sum=4+5=9
- *   						For 4: InOrder predecessor=0, InOrder successor=2, Sum=0+2=2
- *   						.....
- *   						A[] = [0 4 2 5 1 6 3 7 0]
- * O/P:
+ * 
+ * Output:
  *       11
  *      /  \
  *     9    13
  *    / \   / \
  *   2   3 4   3
+ * 
+ * For 1: InOrder predecessor=5, successor=6, Sum=11
+ * For 2: InOrder predecessor=4, successor=5, Sum=9
+ * For 4: InOrder predecessor=0, successor=2, Sum=2
  * 
  * *********************************************************************************************
  */

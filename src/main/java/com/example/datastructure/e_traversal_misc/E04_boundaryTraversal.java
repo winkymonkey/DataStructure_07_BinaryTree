@@ -58,7 +58,7 @@ public class E04_boundaryTraversal {
 		if (node == null)
 			return;
 		
-		if (node.left == null && node.right == null) 	// leaf node
+		if (node.left == null && node.right == null) 	//Leaf node
 			System.out.print(node.data + " ");
 		
 		printLeaves(node.left);
@@ -80,7 +80,7 @@ public class E04_boundaryTraversal {
 			System.out.print(node.data + " ");
 		}
 		else {
-													// Leaf node (do nothing to avoid duplicates in output)
+													//Leaf node (do nothing to avoid duplicates in output)
 		}
 	}
 	
