@@ -6,40 +6,38 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  * Check if a binary tree is subtree of another binary tree
  * *****************************************************************************
- * Tree1:
- *     26
- *    /  \
- *   10   3
- *  /  \   \
- * 4    6   3
- *  \
- *  30
+ * Tree1:    26
+ *          /  \
+ *         10   3
+ *        /  \   \
+ *       4    6   3
+ *        \
+ *        30
  * 
  * 
- * Tree2:
- *   10
- *  /  \
- * 4    6
- *  \
- *  30
+ * Tree2:    10
+ *          /  \
+ *         4    6
+ *          \
+ *          30
  * 
  * *****************************************************************************
  */
 
-public class H10_check_subtreeOfAnotherTree {
+public class H10B_check_subtreeOfAnotherTree {
 
 	public static void main(String args[]) {
 		Node root1 = new Node(26);
-		root1.right = new Node(3);
-		root1.right.right = new Node(3);
 		root1.left = new Node(10);
+		root1.right = new Node(3);
 		root1.left.left = new Node(4);
-		root1.left.left.right = new Node(30);
 		root1.left.right = new Node(6);
+		root1.right.right = new Node(3);
+		root1.left.left.right = new Node(30);
 
 		Node root2 = new Node(10);
-		root2.right = new Node(6);
 		root2.left = new Node(4);
+		root2.right = new Node(6);
 		root2.left.right = new Node(30);
 
 		if (isSubtree(root1, root2))
@@ -49,17 +47,17 @@ public class H10_check_subtreeOfAnotherTree {
 	}
 	
 	
-	private static boolean isSubtree(Node T, Node S) {
-		if (S == null)
+	private static boolean isSubtree(Node root1, Node root2) {
+		if (root2 == null)
 			return true;
 
-		if (T == null)
+		if (root1 == null)
 			return false;
 
-		if (areIdentical(T, S))
+		if (areIdentical(root1, root2))
 			return true;
-
-		return isSubtree(T.left, S) || isSubtree(T.right, S);
+		else
+			return isSubtree(root1.left, root2) || isSubtree(root1.right, root2);
 	}
 	
 	
@@ -70,7 +68,8 @@ public class H10_check_subtreeOfAnotherTree {
 		if (root1 == null || root2 == null)
 			return false;
 
-		return (root1.data == root2.data && areIdentical(root1.left, root2.left)
+		return (root1.data == root2.data 
+				&& areIdentical(root1.left, root2.left)
 				&& areIdentical(root1.right, root2.right));
 	}
 

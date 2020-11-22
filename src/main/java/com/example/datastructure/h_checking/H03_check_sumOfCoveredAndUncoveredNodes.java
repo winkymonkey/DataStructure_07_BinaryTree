@@ -16,7 +16,7 @@ package com.example.datastructure.h_checking;
  *         / \     /
  *        5   7   20
  * 
- * Covered Nodes -- 6,5,7
+ * Covered Nodes ---- 6,5,7
  * Uncovered Nodes -- 9,4,3,17,22,20
  * 
  * *****************************************************************************
