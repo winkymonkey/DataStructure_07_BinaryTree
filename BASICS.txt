@@ -28,9 +28,9 @@ Minimum height to accommodate 'N' nodes ----------> CEIL[log(n+1)]
 
 
 ==============================================================================================
-PERFECT/COMPLETE BINARY TREE
+PERFECT BINARY TREE
 	All leaves are at same level
-	All internal nodes have two children
+	All internal nodes have 2 children
 	   1                       1
      /   \                    / \
     2     3                  2   3
@@ -38,23 +38,8 @@ PERFECT/COMPLETE BINARY TREE
   4   5 6   7
 
 
-
-ALMOST COMPLETE BINARY TREE
-	Except last level, other levels are completely filled
-	The last level has all keys as left as possible	
-	Example: binary heap	
-	              1
-                /   \
-               2     3
-              / \   / \
-             4   5 6   7
-            / \  /
-           8  9 10
-
-
-
-FULL BINARY TREE
-	Every node has 0 or 2 children
+COMPLETE BINARY TREE
+	All nodes have 0 or 2 children
 	   1                    1                        1
      /   \                /   \                    /   \
     2     3              2     3                  2     3
@@ -62,6 +47,19 @@ FULL BINARY TREE
   4   5 6   7                4   5              4   5 6   7
                                 / \            / \
                                6   7          8   9
+
+
+ALMOST COMPLETE BINARY TREE
+	Except last level, other levels are completely filled
+	The last level has all keys as left as possible	
+	Example: binary heap	
+	     1
+       /   \
+      2     3
+     / \   / \
+    4   5 6   7
+   / \  /
+  8   9 10
 
 
 
