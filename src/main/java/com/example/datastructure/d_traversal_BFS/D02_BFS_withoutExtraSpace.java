@@ -19,10 +19,21 @@ package com.example.datastructure.d_traversal_BFS;
 
 public class D02_BFS_withoutExtraSpace {
 	/*
-	 * int maxLevel = getMaxLevel();				//get the Maximum Level Of the Tree.
+	 * private static void printBFS(Node root) {
+	 *    int maxLevel = getMaxLevel(root);				//get the Maximum Level Of the Tree.
+	 *    
+	 *    for (i=0 to maxLevel) {
+	 *       printThisLevel(root, i);					//print Current Level
+	 *    }
+	 * }
 	 * 
-	 * for (i=0 to maxLevel) {
-	 * 		printThisLevel(i);						//print Current Level
+	 * 
+	 * private static getMaxLevel(Node root) {
+	 *    //
+	 * }
+	 * 
+	 * private static printThisLevel(Node root, int level) {
+	 *    //
 	 * }
 	 * 
 	 */

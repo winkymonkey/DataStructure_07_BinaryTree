@@ -18,12 +18,12 @@ public class C01_getMaxLevel {
 	}
 	
 	
-	private static int getMaxLevel(Node node) {
-		if (node == null)
+	private static int getMaxLevel(Node root) {
+		if (root == null)
 			return 0;
 		
-		int leftLevel = getMaxLevel(node.left);
-		int rightLevel = getMaxLevel(node.right);
+		int leftLevel = getMaxLevel(root.left);
+		int rightLevel = getMaxLevel(root.right);
 		
 		if (leftLevel > rightLevel)
 			return leftLevel+1;
