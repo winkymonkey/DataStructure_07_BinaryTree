@@ -9,64 +9,88 @@ import com.example.datastructure.Node;
  * Write a function to connect all the adjacent nodes at the same level in a binary tree.
  * 
  * Input:
- *        1
- *       / \
- *      2   3
- *     / \   \
- *    4   5   6
+ *          1
+ *       /     \
+ *      2       3
+ *     / \     / \
+ *    4   5   6   7
+ *   / \         / \
+ *  8   9      10   11
  * 
  * Output:
- *        1-->NULL
- *       / \
- *      2-->3-->NULL
- *     / \   \
- *    4-->5-->6-->NULL
+ *          1  -->NULL
+ *       /     \
+ *      2  -->  3 -->NULL
+ *     / \     / \
+ *    4-->5-->6-->7-->NULL
+ *   / \         / \
+ *  8-->9  --> 10-->11-->NULL
  * 
  * ************************************************************************
  */
 
 public class D03B_connectNodesAtSameLevel {
-	
+
 	public static void main(String[] args) {
 		Node root = new Node(1);
 		root.left = new Node(2);
 		root.right = new Node(3);
+		
 		root.left.left = new Node(4);
 		root.left.right = new Node(5);
-		root.right.right = new Node(6);
 		
-		root = connect(root);
-		System.out.println(root);
+		root.right.left = new Node(6);
+		root.right.right = new Node(7);
+		
+		root.left.left.left = new Node(8);
+		root.left.left.right = new Node(9);
+		
+		root.right.right.left = new Node(10);
+		root.right.right.right = new Node(11);
+
+		connect(root);
+		System.out.println("");
 	}
 	
 	
-	public static Node connect(Node root) {
-        if (root == null)
-            return null;
-        
-        Node current = root;
-        
-        while (current.left != null) {
-            Node temp = current;
-            
-            while (current != null) {
-            	if (current.left != null)
-            		current.left.next = current.right;
-                
-                if (current.next == null)
-                	current.right.next = null;
-                else if (current.next.left == null && current.next.right == null)
-                	current.right.next = null;
-                else if (current.next.left != null && current.next.right == null)
-                	current.right.next = current.next.left;
-                else if (current.next.left == null && current.next.right != null)
-                	current.right.next = current.next.right;
-                
-                current = current.next;
-            }          
-            current = temp.left;         
-        }
-        return root;
-    }
+	private static void connect(Node root) {
+		if (root == null)
+			return;
+
+		if (root.next != null)
+			connect(root.next);
+
+		if (root.left != null) {						//if ROOT has a left child
+			if (root.right != null) {
+				root.left.next = root.right;
+				root.right.next = getNextRight(root);
+			}
+			else {
+				root.left.next = getNextRight(root);
+			}
+			connect(root.left);
+		}
+		else if (root.right != null) {					//if ROOT has a right child, but no left child
+			root.right.next = getNextRight(root);
+			connect(root.right);
+		}
+		else {											//if ROOT has no child
+			connect(getNextRight(root));
+		}
+	}
+	
+	
+	private static Node getNextRight(Node node) {
+		Node temp = node.next;
+
+		while (temp != null) {			//keep on going TEMP's next until TEMP has atleast 1 child
+			if (temp.left != null)
+				return temp.left;
+			if (temp.right != null)
+				return temp.right;
+			temp = temp.next;
+		}
+		return null;
+	}
 	
 }

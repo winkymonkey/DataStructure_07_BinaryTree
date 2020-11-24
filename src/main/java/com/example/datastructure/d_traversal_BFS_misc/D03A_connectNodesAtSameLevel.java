@@ -12,18 +12,22 @@ import com.example.datastructure.Node;
  * Write a function to connect all the adjacent nodes at the same level in a binary tree.
  * 
  * Input:
- *        1
- *       / \
- *      2   3
- *     / \   \
- *    4   5   6
+ *          1
+ *       /     \
+ *      2       3
+ *     / \     / \
+ *    4   5   6   7
+ *   / \         / \
+ *  8   9      10   11
  * 
  * Output:
- *        1-->NULL
- *       / \
- *      2-->3-->NULL
- *     / \   \
- *    4-->5-->6-->NULL
+ *          1  -->NULL
+ *       /     \
+ *      2  -->  3 -->NULL
+ *     / \     / \
+ *    4-->5-->6-->7-->NULL
+ *   / \         / \
+ *  8-->9  --> 10-->11-->NULL
  * 
  * ************************************************************************
  */
@@ -34,9 +38,18 @@ public class D03A_connectNodesAtSameLevel {
 		Node root = new Node(1);
 		root.left = new Node(2);
 		root.right = new Node(3);
+		
 		root.left.left = new Node(4);
 		root.left.right = new Node(5);
-		root.right.right = new Node(6);
+		
+		root.right.left = new Node(6);
+		root.right.right = new Node(7);
+		
+		root.left.left.left = new Node(8);
+		root.left.left.right = new Node(9);
+		
+		root.right.right.left = new Node(10);
+		root.right.right.right = new Node(11);
 		
 		root = connect(root);
 		System.out.println(root);
@@ -52,9 +65,9 @@ public class D03A_connectNodesAtSameLevel {
 			
 			for (int i=1; i<=n; i++) {
 				Node polled = queue.poll();
-				if (i!=n)							//non-ending nodes at a level
+				if (i!=n)							//intermediate nodes at this level
 					polled.next = queue.peek();
-				else								//ending node at a level
+				else								//ending node at this level
 					polled.next = null;
 				
 				if (polled.left != null)

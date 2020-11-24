@@ -24,7 +24,7 @@ public class E03_boundaryTraversal {
 	
 	public static void main(String args[]) {
 		Node root = TreeUtilA.createNewTreeA7();
-		if(root != null) {
+		if (root != null) {
 			System.out.print(root.data + " ");
 			
 			printBoundaryLeft(root.left);
