@@ -1,7 +1,7 @@
-----------------
-HEIGHT OF NODE:
-----------------
-Number of edges from a node to the longest possible leaf
+==============================================================================================
+Height of a Node ------- number of edges from that node to the longest possible leaf
+Height of a Tree ------- height of the root
+
 
         1           ---- 1's Height=3
       /   \
@@ -17,9 +17,9 @@ Binary tree of height 'h' ----- maximum node count (2^h+1 - 1)
 								minimum node count (h + 1)
 
 Binary tree of 'N' nodes ------ maximum height (N)
-								minimum height (Floor(LogN)) 
+								minimum height (Floor(LogN))
 
-Binary tree of at height 'h' -- maximum number of nodes (CEIL(N / 2^h+1)) 
+Binary tree of at height 'h' -- maximum number of nodes (CEIL(N / 2^h+1))
 
 
 
