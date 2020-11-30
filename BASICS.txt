@@ -1,5 +1,7 @@
+----------------
 HEIGHT OF NODE:
-	Number of edges from a node to the longest possible leaf
+----------------
+Number of edges from a node to the longest possible leaf
 
         1           ---- 1's Height=3
       /   \
@@ -11,8 +13,6 @@ HEIGHT OF NODE:
 
 
 
-
-==============================================================================================
 Binary tree of height 'h' ----- maximum node count (2^h+1 - 1) 
 								minimum node count (h + 1)
 
@@ -25,18 +25,21 @@ Binary tree of at height 'h' -- maximum number of nodes (CEIL(N / 2^h+1))
 
 
 ==============================================================================================
+-------------------
 PERFECT BINARY TREE
-	All nodes have 2 children
-	All leaves are at same level
+-------------------
+All nodes have 2 children
+All leaves are at same level
 	   1                       1
      /   \                    / \
     2     3                  2   3
    / \   / \
   4   5 6   7
 
-
+--------------------
 COMPLETE BINARY TREE
-	All nodes have 0 or 2 children
+--------------------
+All nodes have 0 or 2 children
 	   1                    1                        1
      /   \                /   \                    /   \
     2     3              2     3                  2     3
@@ -45,11 +48,12 @@ COMPLETE BINARY TREE
                                 / \            / \
                                6   7          8   9
 
-
+---------------------------
 ALMOST COMPLETE BINARY TREE
-	Except last level, other levels are completely filled
-	The last level has all keys as left as possible	
-	Example: binary heap	
+---------------------------
+Except last level, other levels are completely filled
+The last level has all keys as left as possible	
+Example: binary heap
 	       1
         /     \
        2       3
@@ -62,32 +66,29 @@ ALMOST COMPLETE BINARY TREE
 
 
 ==============================================================================================
+--------------------
 BALANCED BINARY TREE
-	If height of the binary tree is O(Logn)
+--------------------
+If height of the binary tree is O(Logn)
 	
-	Example - AVL Tree maintains O(Logn) height 
-				- by keeping the difference between heights of left & right subtrees as 1.
+Example - AVL Tree maintains O(Logn) height 
+		- by keeping the difference between heights of left & right subtrees as 1.
 	
-	Example - Red-Black Tree maintain O(Logn) height
-				- by keeping same the number of Black nodes on every root to leaf paths
-				- by making sure that there are no adjacent red nodes
+Example - Red-Black Tree maintain O(Logn) height
+		- by keeping same the number of Black nodes on every root to leaf paths
+		- by making sure that there are no adjacent red nodes
 
 
 
 
 ==============================================================================================
-LABLED BINARY TREE
-	A Binary Tree is labeled if every node is assigned a label (value)
+--------------------
+UNLABLED BINARY TREE
+--------------------
+A Binary Tree is unlabeled if nodes are not assigned any label (value)
 	  o
 	 / \
 	o   o
-
-
-UNLABLED BINARY TREE
-	A Binary Tree is unlabeled if nodes are not assigned any label (value)
-	  1
-	 / \
-	2   3
 
 
 HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
@@ -102,6 +103,15 @@ HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
 														  (2n)!
 	The n'th Catalan Number can also be evaluated as = -----------
 														(n+1)! * n! 
+
+
+------------------
+LABLED BINARY TREE
+------------------
+A Binary Tree is labeled if every node is assigned a label (value)
+	  1
+	 / \
+	2   3
 
 
 HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
@@ -119,7 +129,6 @@ HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
 Insert/Delete operations in Binary Tree 
 	are slower than Array
 	and quicker than Linked List
-
 
 
 DFS (Depth First Search) (InOrder, PreOrder, PostOrder)
