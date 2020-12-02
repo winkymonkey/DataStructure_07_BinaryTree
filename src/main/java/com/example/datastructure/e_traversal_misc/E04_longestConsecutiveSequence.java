@@ -51,12 +51,12 @@ public class E04_longestConsecutiveSequence {
 		int leftLen = findConSeq(root.left);
 		int rightLen = findConSeq(root.right);
 
-		if (root.left != null && root.data == root.left.data - 1) {			//a non-leaf node which forms sequence with left subtree
+		if (root.left != null && root.left.data == root.data + 1) {			//a non-leaf node which forms sequence with left subtree
 			leftLen++;
 			maxLen = Math.max(leftLen, rightLen);
 			return leftLen;
 		}
-		else if (root.right != null && root.data == root.right.data - 1) {	//a non-leaf node which forms sequence with right subtree
+		else if (root.right != null && root.right.data == root.data + 1) {	//a non-leaf node which forms sequence with right subtree
 			rightLen++;
 			maxLen = Math.max(leftLen, rightLen);
 			return rightLen;

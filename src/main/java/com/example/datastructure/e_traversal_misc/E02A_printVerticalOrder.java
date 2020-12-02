@@ -34,12 +34,13 @@ public class E02A_printVerticalOrder {
 	private static int MIN = 0;			//minimum horizontal distance from root
 	private static int MAX = 0;			//maximum horizontal distance from root
 	
+	
 	public static void main(String args[]) {
 		Node root = TreeUtilA.createNewTreeA7();
 		findMinMaxDistance(root, 0);
 		
 		for (int line=MIN; line<=MAX; line++) {
-			printVerticalLine(root, line, 0);
+			printVerticalLine(root, 0, line);
 			System.out.println("");
 		}
 	}
@@ -57,15 +58,15 @@ public class E02A_printVerticalOrder {
 	}
 	
 	
-	private static void printVerticalLine(Node node, int line, int hd) {	//hd = horizontal distance of current node from root
+	private static void printVerticalLine(Node node, int hd, int line) {	//hd = horizontal distance of current node from root
 		if (node == null)
 			return;
 		
 		if (hd == line)
 			System.out.print(node.data + " ");
 		
-		printVerticalLine(node.left, line, hd-1);
-		printVerticalLine(node.right, line, hd+1);
+		printVerticalLine(node.left, hd-1, line);
+		printVerticalLine(node.right, hd+1, line);
 	}
 	
 }
