@@ -28,7 +28,7 @@ import com.example.datastructure.TreeUtilA;
  * *****************************************************************************
  */
 
-public class C07_BFS_reverseAlternateLevels {
+public class C07_reverseAlternateLevels {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtilA.createNewTreeA4();

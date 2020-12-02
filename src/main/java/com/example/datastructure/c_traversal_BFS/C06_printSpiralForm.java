@@ -15,7 +15,7 @@ package com.example.datastructure.c_traversal_BFS;
  * *****************************************************************************
  */
 
-public class C06_BFS_withoutExtraSpace_spiralForm {
+public class C06_printSpiralForm {
 	/*
 	 * int maxLevel = getMaxLevel();			//get the Maximum Level Of the Tree
 	 * 
