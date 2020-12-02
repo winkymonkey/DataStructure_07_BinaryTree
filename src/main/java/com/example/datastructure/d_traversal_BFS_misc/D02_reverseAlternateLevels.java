@@ -1,4 +1,4 @@
-package com.example.datastructure.c_traversal_BFS;
+package com.example.datastructure.d_traversal_BFS_misc;
 
 import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtilA;
@@ -28,7 +28,7 @@ import com.example.datastructure.TreeUtilA;
  * *****************************************************************************
  */
 
-public class C07_reverseAlternateLevels {
+public class D02_reverseAlternateLevels {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtilA.createNewTreeA4();

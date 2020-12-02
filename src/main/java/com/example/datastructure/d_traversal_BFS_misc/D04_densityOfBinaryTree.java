@@ -26,7 +26,7 @@ package com.example.datastructure.d_traversal_BFS_misc;
  * *****************************************************************************
  */
 
-public class D02_densityOfBinaryTree {
+public class D04_densityOfBinaryTree {
 	/*
 	 * find height of the tree --- getMaxLevel()
 	 * it will provide the HEIGHT

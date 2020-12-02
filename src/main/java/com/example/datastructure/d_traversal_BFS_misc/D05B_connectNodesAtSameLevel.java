@@ -29,7 +29,7 @@ import com.example.datastructure.Node;
  * ************************************************************************
  */
 
-public class D03B_connectNodesAtSameLevel {
+public class D05B_connectNodesAtSameLevel {
 
 	public static void main(String[] args) {
 		Node root = new Node(1);

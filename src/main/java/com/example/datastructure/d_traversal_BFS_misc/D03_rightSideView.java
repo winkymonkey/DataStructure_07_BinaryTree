@@ -26,7 +26,7 @@ import com.example.datastructure.Node;
  * ******************************************************************
  */
 
-public class D01_rightSideView {
+public class D03_rightSideView {
 	/*
 	 * If we observe carefully, we will see that our main task is to print the right most node of every level.
 	 * So, we will do a level order traversal on the tree and print the rightmost node at every level.
