@@ -13,13 +13,13 @@ Height of a Tree ------- height of the root
 
 
 
-Binary tree of height 'h' ----- maximum node count (2^h+1 - 1) 
-								minimum node count (h + 1)
+Binary tree of height 'h' ----- maximum node count = 2^h+1 - 1
+								minimum node count = h + 1
 
-Binary tree of 'N' nodes ------ maximum height (N)
-								minimum height (Floor(LogN))
+Binary tree of 'N' nodes ------ maximum height = N
+								minimum height = Floor(LogN)
 
-Binary tree of at height 'h' -- maximum number of nodes (CEIL(N / 2^h+1))
+Binary tree of at height 'h' -- maximum number of nodes = CEIL(N / 2^h+1)
 
 
 
@@ -100,9 +100,9 @@ HOW MANY DIFFERENT UNLABELED BINARY TREES CAN BE THERE WITH N NODES?
 
 	This is Catalan Series
 	1 1 2 5 14 42 132 429 1430 4862 ....
-														  (2n)!
-	The n'th Catalan Number can also be evaluated as = -----------
-														(n+1)! * n! 
+														    (2n)!
+	The n'th Catalan Number can also be evaluated as = ---------------
+														 (n+1)! * n! 
 
 
 ------------------
@@ -118,9 +118,9 @@ HOW MANY DIFFERENT LABLED BINARY TREES CAN BE THERE WITH N NODES?
 	First, count of the unlabeled trees as above.
 	Now every unlabeled tree with n nodes can create n! labeled trees by assigning different permutations of labels to all nodes.
 	
-						(2n)! * n!
-	So the count is = --------------
-						(n+1)! * n!
+						 (2n)! * n!
+	So the count is = -----------------
+						 (n+1)! * n!
 
 
 
