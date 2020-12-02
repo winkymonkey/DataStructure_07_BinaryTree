@@ -23,6 +23,7 @@ public class B01B_inorderSuccessor_ofOneNode {
 		root.left.right = new Node(5);
 		root.right.right = new Node(6);
 		
+		findInorderSuccesor(root, root);				// case 1 (X = 1)
 		findInorderSuccesor(root, root.left);			// case 1 (X = 2)
 		findInorderSuccesor(root, root.right);			// case 1 (X = 3)
 
