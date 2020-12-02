@@ -20,13 +20,13 @@ import com.example.datastructure.TreeUtilA;
  * 
  * BFS:   1 2 3 4 5 6 7 8 9
  * 
- * ******************************************************************************************
+ * *****************************************************************************
  */
 
 public class C04_BFS_usingExtraSpace {
 	
 	public static void main(String[] args) {
-		Node root = TreeUtilA.createNewTreeA3();
+		Node root = TreeUtilA.createNewTreeA2();
 		printBFS(root);
 	}
 	
@@ -36,7 +36,7 @@ public class C04_BFS_usingExtraSpace {
 		queue.add(root);
 		
 		while (!queue.isEmpty()) {
-			Node polled = queue.poll();				//Retrieves and removes the head of this queue
+			Node polled = queue.poll();
 			System.out.print(polled.data + " ");
 			
 			if (polled.left != null)
@@ -47,5 +47,28 @@ public class C04_BFS_usingExtraSpace {
 		 	
 		 }
 	}
+	
+	
+	
+//	private static void printBFS2(Node root) {
+//		Queue<Node> queue = new LinkedList<Node>();
+//		queue.add(root);
+//		
+//		while (!queue.isEmpty()) {
+//			int n = queue.size();
+//			
+//			for (int i=1; i<=n; i++) {				// Traverse all nodes of current level
+//				Node polled = queue.poll();
+//				System.out.print(polled.data + " ");
+//				
+//				if (polled.left != null)
+//					queue.add(polled.left);
+//				
+//			 	if (polled.right != null)
+//			 		queue.add(polled.right);
+//			 	
+//			}
+//		}
+//	}
 	
 }
