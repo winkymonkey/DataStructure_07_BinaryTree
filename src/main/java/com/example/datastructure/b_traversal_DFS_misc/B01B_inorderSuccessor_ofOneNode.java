@@ -76,9 +76,11 @@ public class B01B_inorderSuccessor_ofOneNode {
 				System.out.println("Inorder Successor of " + X.data + " is " + root.data);
 				return null;
 			}
-			return root;
+			else {					//when root.right == temp
+				return root;
+			}
 		}
-		return null;
+		return null;				//when neither leftChild nor rightChild contains X
 	}
 	
 }
