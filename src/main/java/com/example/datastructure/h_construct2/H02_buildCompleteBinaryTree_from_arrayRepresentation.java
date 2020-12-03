@@ -1,4 +1,4 @@
-package com.example.datastructure.j_construct2;
+package com.example.datastructure.h_construct2;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.j_construct2;
  * *****************************************************************************
  */
 
-public class J02_buildCompleteBinaryTree_from_arrayRepresentation {
+public class H02_buildCompleteBinaryTree_from_arrayRepresentation {
 	/*
 	 * The similar way as previous.
 	 * But here the advantage is that we can access any element in O(1) time.

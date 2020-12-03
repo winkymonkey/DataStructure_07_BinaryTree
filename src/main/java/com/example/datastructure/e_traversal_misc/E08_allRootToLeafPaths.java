@@ -1,4 +1,4 @@
-package com.example.datastructure.g_paths;
+package com.example.datastructure.e_traversal_misc;
 
 import com.example.datastructure.Node;
 
@@ -17,12 +17,13 @@ import com.example.datastructure.Node;
  * 
  * Output:
  * 		10 –> 8 –> 3
- * 		10 –> 8 –> 5
+ * 		10 –> 8 –> 5 -> 7
  * 		10 –> 2 –> 2
+ * 
  * **********************************************************************
  */
 
-public class G01_printAllRootToLeafPaths {
+public class E08_allRootToLeafPaths {
 	
 	public static void main(String args[]) {
 		Node root = new Node(10);

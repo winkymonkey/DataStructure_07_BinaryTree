@@ -1,4 +1,4 @@
-package com.example.datastructure.h_construct;
+package com.example.datastructure.g_construct;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.h_construct;
  * *****************************************************************************
  */
 
-public class H07_from_PreorderPostorder_constructFullBinaryTree {
+public class G07_from_PreorderPostorder_constructFullBinaryTree {
 	/*             1
 	 *           /   \
 	 *         2       3

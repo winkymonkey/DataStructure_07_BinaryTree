@@ -1,4 +1,4 @@
-package com.example.datastructure.j_construct2;
+package com.example.datastructure.h_construct2;
 
 /**
  * *****************************************************************************
@@ -21,7 +21,7 @@ package com.example.datastructure.j_construct2;
  * *****************************************************************************
  */
 
-public class J01_buildCompleteBinaryTree_from_linkedlistRepresentation {
+public class H01_buildCompleteBinaryTree_from_linkedlistRepresentation {
 	/*
 	 * Create an empty queue.
 	 * Make the first node of the list as root, and enqueue it to the queue.

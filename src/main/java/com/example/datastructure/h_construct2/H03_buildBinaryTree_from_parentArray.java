@@ -1,4 +1,4 @@
-package com.example.datastructure.j_construct2;
+package com.example.datastructure.h_construct2;
 
 /**
  * *****************************************************************************
@@ -30,6 +30,6 @@ package com.example.datastructure.j_construct2;
  * *****************************************************************************
  */
 
-public class J03_buildBinaryTree_from_parentArray {
+public class H03_buildBinaryTree_from_parentArray {
 	
 }

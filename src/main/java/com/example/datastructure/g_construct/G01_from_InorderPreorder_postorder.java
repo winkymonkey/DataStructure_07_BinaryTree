@@ -1,4 +1,4 @@
-package com.example.datastructure.h_construct;
+package com.example.datastructure.g_construct;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.h_construct;
  * *****************************************************************************
  */
 
-public class H01_from_InorderPreorder_postorder {
+public class G01_from_InorderPreorder_postorder {
 	
 	private static int IN[] = {7, 2, 1, 4, 3, 5};
 	private static int PRE[] = {1, 2, 7, 3, 4, 5};
