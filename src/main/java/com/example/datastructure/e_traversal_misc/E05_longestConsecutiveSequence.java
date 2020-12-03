@@ -28,7 +28,7 @@ import com.example.datastructure.TreeUtilA;
  * ******************************************************************************************
  */
 
-public class E04_longestConsecutiveSequence {
+public class E05_longestConsecutiveSequence {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtilA.createNewTreeA8();

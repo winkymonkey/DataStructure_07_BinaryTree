@@ -5,7 +5,6 @@ package com.example.datastructure.h_checking;
  * Check if two nodes are cousins in a Binary Tree
  * *****************************************************************************
  * Cousin Nodes -- if two nodes are at same level and have different parents
- * 
  * *****************************************************************************
  *      6
  *    /   \

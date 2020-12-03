@@ -8,7 +8,6 @@ import com.example.datastructure.TreeUtilA;
  * Check if two nodes in a Binary Tree are siblings
  * ******************************************************************************************
  * Sibling Nodes -- if two nodes are at same level and have different parents
- * 
  * ******************************************************************************************
  * 		     1
  *        /      \

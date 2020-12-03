@@ -34,7 +34,7 @@ import com.example.datastructure.TreeUtilA;
  * ************************************************************************************************************
  */
 
-public class E05_lowestCommonAncestor {
+public class E06_lowestCommonAncestor {
 	/*
 	 * Traverse the tree starting from the root.
 	 * 

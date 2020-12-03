@@ -6,7 +6,6 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  * Given a binary tree and a node, print all cousins of given node.
  * Note that siblings should not be printed.
- * 
  * *****************************************************************************
  * Given node is 5
  *       1

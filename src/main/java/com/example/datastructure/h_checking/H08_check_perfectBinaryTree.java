@@ -5,7 +5,6 @@ package com.example.datastructure.h_checking;
  * Check whether a given binary tree is perfect or not
  * *****************************************************************************
  * Perfect binary tree -- all internal nodes have two children and all leaves are at same level
- * 
  * *****************************************************************************
  */
 

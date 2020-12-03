@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.e_traversal_misc;
 
 /**
  * *****************************************************************************
@@ -22,7 +22,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H03_check_sumOfCoveredAndUncoveredNodes {
+public class E04_sumOfCoveredAndUncoveredNodes {
 	/*
 	 * THIS PROBLEM IS RELATED TO BOUNDARY TRAVERSAL
 	 * 
