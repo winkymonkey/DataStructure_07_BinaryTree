@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -15,7 +15,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H01_check_childrenSumProperty {
+public class F01_check_childrenSumProperty {
 	/*
 	 * Traverse the given binary tree.
 	 * For each node check (recursively) if the node and both its children satisfy the Children Sum Property.

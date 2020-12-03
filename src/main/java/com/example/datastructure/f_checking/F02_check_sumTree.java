@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -17,7 +17,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H02_check_sumTree {
+public class F02_check_sumTree {
 	/*
 	 * ----METHOD--1----
 	 * Get the sum of nodes in left subtree and right subtree.

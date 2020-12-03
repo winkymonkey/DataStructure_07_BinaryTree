@@ -1,4 +1,4 @@
-package com.example.datastructure.f_construct;
+package com.example.datastructure.h_construct;
 
 import com.example.datastructure.Node;
 
@@ -8,7 +8,7 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  */
 
-public class F06_from_InorderLevelorder_constructTree {
+public class H06_from_InorderLevelorder_constructTree {
 	
 	private static int IN[] = {4, 8, 10, 12, 14, 20, 22};
 	private static int LEVEL[] = {20, 8, 22, 4, 12, 10, 14};

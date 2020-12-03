@@ -1,4 +1,4 @@
-package com.example.datastructure.f_construct;
+package com.example.datastructure.h_construct;
 
 import com.example.datastructure.Node;
 
@@ -8,7 +8,7 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  */
 
-public class F04_from_InorderPostorder_constructTree {
+public class H04_from_InorderPostorder_constructTree {
 	
 	private static int IN[] = {7, 2, 1, 4, 3, 5};
 	private static int POST[] = {7, 2, 4, 5, 3, 1};

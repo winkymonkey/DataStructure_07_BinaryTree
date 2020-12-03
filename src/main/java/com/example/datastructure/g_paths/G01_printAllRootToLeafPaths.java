@@ -1,4 +1,4 @@
-package com.example.datastructure.j_paths;
+package com.example.datastructure.g_paths;
 
 import com.example.datastructure.Node;
 
@@ -22,7 +22,7 @@ import com.example.datastructure.Node;
  * **********************************************************************
  */
 
-public class J01_printAllRootToLeafPaths {
+public class G01_printAllRootToLeafPaths {
 	
 	public static void main(String args[]) {
 		Node root = new Node(10);

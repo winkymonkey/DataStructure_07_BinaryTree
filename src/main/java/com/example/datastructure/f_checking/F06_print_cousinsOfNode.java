@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -19,7 +19,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H06_print_cousinsOfNode {
+public class F06_print_cousinsOfNode {
 	/*
 	 * find level of the given node
 	 * print all nodes (except siblings of given node) at a given level

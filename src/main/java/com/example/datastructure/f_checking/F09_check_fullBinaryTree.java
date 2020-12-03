@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -8,6 +8,6 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H09_check_fullBinaryTree {
+public class F09_check_fullBinaryTree {
 	
 }

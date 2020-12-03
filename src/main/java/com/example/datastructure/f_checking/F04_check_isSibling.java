@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 import com.example.datastructure.Node;
 import com.example.datastructure.TreeUtilA;
@@ -23,7 +23,7 @@ import com.example.datastructure.TreeUtilA;
  * ******************************************************************************************
  */
 
-public class H04_check_isSibling {
+public class F04_check_isSibling {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtilA.createNewTreeA3();

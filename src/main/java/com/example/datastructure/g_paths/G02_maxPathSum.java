@@ -1,4 +1,4 @@
-package com.example.datastructure.j_paths;
+package com.example.datastructure.g_paths;
 
 import com.example.datastructure.Node;
 
@@ -20,7 +20,7 @@ import com.example.datastructure.Node;
  * ********************************************************************************
  */
 
-public class J02_maxPathSum {
+public class G02_maxPathSum {
 	/*
 	 * For each node there can be four ways that the max path goes through the node.
 	 * Keep trace of four paths and pick up the max one in the end.

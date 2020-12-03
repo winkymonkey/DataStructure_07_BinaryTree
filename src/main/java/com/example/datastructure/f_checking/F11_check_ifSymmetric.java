@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 import com.example.datastructure.Node;
 
@@ -24,7 +24,7 @@ import com.example.datastructure.Node;
  * ************************************************************************************
  */
 
-public class H11_check_ifSymmetric {
+public class F11_check_ifSymmetric {
 	
 	public static void main(String[] args) {
 		Node root = new Node(1);

@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -6,7 +6,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H07_check_ifAllLeavesAreAtSameLevel {
+public class F07_check_ifAllLeavesAreAtSameLevel {
 	/*
 	 * int storedLevel = 0;
 	 * 1.start traversing from root & recursively search in left and right subtree.

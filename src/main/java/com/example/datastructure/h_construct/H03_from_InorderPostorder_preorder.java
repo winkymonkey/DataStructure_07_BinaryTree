@@ -1,4 +1,4 @@
-package com.example.datastructure.f_construct;
+package com.example.datastructure.h_construct;
 
 import java.util.Stack;
 
@@ -8,7 +8,7 @@ import java.util.Stack;
  * *****************************************************************************
  */
 
-public class F03_from_InorderPostorder_preorder {
+public class H03_from_InorderPostorder_preorder {
 	
 	private static int IN[] = {7, 2, 1, 4, 3, 5};
 	private static int POST[] = {7, 2, 4, 5, 3, 1};

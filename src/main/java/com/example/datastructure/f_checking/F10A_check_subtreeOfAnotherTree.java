@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -24,7 +24,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H10A_check_subtreeOfAnotherTree {
+public class F10A_check_subtreeOfAnotherTree {
 	/*
 	 * Tree1: 
 	 * 		InOrder:  IN1[]  = 4 30 10 6 26 3 3

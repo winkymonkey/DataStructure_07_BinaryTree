@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -19,7 +19,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H05_check_isCousin {
+public class F05_check_isCousin {
 	/*
 	 * find level of both the nodes & check is they are at same level
 	 * if they are at same level, go to next step... otherwise return false

@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 import com.example.datastructure.Node;
 
@@ -24,7 +24,7 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  */
 
-public class H10B_check_subtreeOfAnotherTree {
+public class F10B_check_subtreeOfAnotherTree {
 
 	public static void main(String args[]) {
 		Node root1 = new Node(26);

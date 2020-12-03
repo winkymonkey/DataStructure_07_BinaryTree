@@ -1,4 +1,4 @@
-package com.example.datastructure.h_checking;
+package com.example.datastructure.f_checking;
 
 /**
  * *****************************************************************************
@@ -8,7 +8,7 @@ package com.example.datastructure.h_checking;
  * *****************************************************************************
  */
 
-public class H08_check_perfectBinaryTree {
+public class F08_check_perfectBinaryTree {
 	/*
 	 * 1.check if a node have both left and right child.
 	 * 2.search leaf nodes recursively in both left and right subtree.
