@@ -24,7 +24,7 @@ import com.example.datastructure.Node;
  * *****************************************************************************
  */
 
-public class F10B_check_subtreeOfAnotherTree {
+public class F10B_isSubtreeOfAnotherTree {
 
 	public static void main(String args[]) {
 		Node root1 = new Node(26);

@@ -8,6 +8,6 @@ package com.example.datastructure.f_checking;
  * *****************************************************************************
  */
 
-public class F09_check_fullBinaryTree {
+public class F09_isFullBinaryTree {
 	
 }

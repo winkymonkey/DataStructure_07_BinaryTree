@@ -24,7 +24,7 @@ import com.example.datastructure.Node;
  * ************************************************************************************
  */
 
-public class F11_check_ifSymmetric {
+public class F11_isSymmetric {
 	
 	public static void main(String[] args) {
 		Node root = new Node(1);

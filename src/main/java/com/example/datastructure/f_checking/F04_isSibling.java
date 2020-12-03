@@ -9,6 +9,7 @@ import com.example.datastructure.TreeUtilA;
  * ******************************************************************************************
  * Sibling Nodes -- if two nodes are at same level and have different parents
  * ******************************************************************************************
+ * 
  * 		     1
  *        /      \
  *      2          3
@@ -17,30 +18,30 @@ import com.example.datastructure.TreeUtilA;
  *    \   / \   / \   /
  *     8 9  10 11 12 13
  * 
- * isSiblings(4,6) = FALSE
- * isSiblings(6,7) = TRUE
+ * isSibling(4,6) = FALSE
+ * isSibling(6,7) = TRUE
  * 
  * ******************************************************************************************
  */
 
-public class F04_check_isSibling {
+public class F04_isSibling {
 	
 	public static void main(String[] args) {
 		Node root = TreeUtilA.createNewTreeA3();
 		
-		boolean isSibling = checkSiblings(root, 10, 11);
+		boolean isSibling = checkSibling(root, 10, 11);
 		System.out.println(isSibling);
 	}
 	
 	
-	private static boolean checkSiblings(Node node, int a, int b) {
-		if (node == null || node.left==null || node.right==null)
+	private static boolean checkSibling(Node node, int a, int b) {
+		if (node == null || node.left == null || node.right == null)
 			return false;
 		
 		if ((node.left.data==a && node.right.data==b) || (node.left.data==b && node.right.data==a))
 			return true;
 		
-		return (checkSiblings(node.left, a, b) || checkSiblings(node.right, a, b));		
+		return (checkSibling(node.left, a, b) || checkSibling(node.right, a, b));		
 	}
 	
 }

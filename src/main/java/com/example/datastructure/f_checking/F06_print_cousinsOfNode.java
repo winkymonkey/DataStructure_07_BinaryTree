@@ -8,6 +8,7 @@ package com.example.datastructure.f_checking;
  * Note that siblings should not be printed.
  * *****************************************************************************
  * Given node is 5
+ * 
  *       1
  *     /   \
  *    2     3
@@ -21,8 +22,8 @@ package com.example.datastructure.f_checking;
 
 public class F06_print_cousinsOfNode {
 	/*
-	 * find level of the given node
-	 * print all nodes (except siblings of given node) at a given level
+	 * Find the level of the given node & Find its sibling node
+	 * print all nodes (except its sibling) at a given level
 	 *  
 	 */
 }

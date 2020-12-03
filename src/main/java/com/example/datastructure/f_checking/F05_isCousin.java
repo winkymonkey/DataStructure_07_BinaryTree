@@ -6,26 +6,29 @@ package com.example.datastructure.f_checking;
  * *****************************************************************************
  * Cousin Nodes -- if two nodes are at same level and have different parents
  * *****************************************************************************
- *      6
- *    /   \
- *   3     5
- *  / \   / \
- * 7   8 1   3
  * 
- * isCousin(7,1) = TRUE
- * isCousin(3,5) = FALSE
- * isCousin(7,5) = FALSE
+ * 		     1
+ *        /      \
+ *      2          3
+ *    /   \       /  \
+ *   4     5     6    7
+ *    \   / \   / \   /
+ *     8 9  10 11 12 13
+ * 
+ * isCousin(8,9) = TRUE
+ * isCousin(6,7) = FALSE
+ * isCousin(8,6) = FALSE
  * 
  * *****************************************************************************
  */
 
-public class F05_check_isCousin {
+public class F05_isCousin {
 	/*
 	 * find level of both the nodes & check is they are at same level
-	 * if they are at same level, go to next step... otherwise return false
+	 * if they are at same level, go to next step... otherwise return false...
 	 * 
 	 * now check if they are siblings or not
-	 * if they are not siblings, return true... otherwise return false
+	 * if they are not siblings, return true... otherwise return false...
 	 * 
 	 */
 }
