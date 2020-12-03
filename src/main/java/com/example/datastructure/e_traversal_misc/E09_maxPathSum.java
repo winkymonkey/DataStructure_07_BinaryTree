@@ -22,15 +22,16 @@ import com.example.datastructure.Node;
 
 public class E09_maxPathSum {
 	/*
-	 * For each node there can be four ways that the max path goes through the node.
+	 * For each node there can be 4 ways that the max path goes through the node.
+	 * 	- 'Node only'
+	 * 	- 'Max path through Left Child' + 'Node'
+	 * 	- 'Max path through Right Child' + 'Node'
+	 * 	- 'Max path through Left Child' + 'Node' + 'Max path through Right Child'
+	 * 
 	 * Keep trace of four paths and pick up the max one in the end.
-	 * 	1. Node only
-	 * 	2. Max path through Left Child + Node
-	 * 	3. Max path through Right Child + Node
-	 * 	4. Max path through Left Child + Node + Max path through Right Child
 	 * 
 	 * NOTE: root of every subtree need to return maximum path sum such that "at most one child of root is involved".
-	 * that's why, sum1 returned from the method, not maxSum!!
+	 * that's why 'max1' returned from the method, not 'maxSum'
 	 */
 	
 	public static void main(String args[]) {

@@ -24,6 +24,11 @@ import com.example.datastructure.Node;
  */
 
 public class E08_allRootToLeafPaths {
+	/*
+	 * root node writes own name to the array and pass it on to its children
+	 * their children also appends their names in the array and pass it on to its children and it goes on
+	 * whenever it's a leaf node, it appends its name and prints the array.
+	 */
 	
 	public static void main(String args[]) {
 		Node root = new Node(10);
